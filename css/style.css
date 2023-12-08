@@ -1,0 +1,23 @@
+@import "./fonts.css";
+@import "./variables.css";
+@import "./reset.css";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: var(--primary-font);
+    background: #032030;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+button {
+    font-family: var(--primary-font);
+}

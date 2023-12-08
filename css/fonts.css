@@ -1,0 +1,12 @@
+@font-face {
+    font-family: IRANSansLight;
+    src: url(../fonts/DanaFaNum-Light.ttf);
+}
+@font-face {
+    font-family: IRANSansReg;
+    src: url(../fonts/DanaFaNum-Regular.ttf);
+}
+@font-face {
+    font-family: IRANSansMed;
+    src: url(../fonts/DanaFaNum-Medium.ttf);
+}

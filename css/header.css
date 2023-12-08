@@ -1,0 +1,223 @@
+@import "./fonts.css";
+@import "./variables.css";
+@import "./reset.css";
+
+/* Start Navbar Styles */
+
+/* Finish Navbar Styles */
+
+/* Start Banner Styles */
+
+.banner,
+.banner-title,
+.banner-right__btns,
+.banner-left,
+.banner-right,
+.banner__img,
+.banner-text {
+    transition: 0.6s;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 60%;
+    background-image: linear-gradient(to bottom, #121313, #004d7488), url(../images/banner/banner-bckgrnd.jpg);
+    background-size: 180%;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.banner-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.banner-title {
+    font-family: 'IRANSansReg';
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: right;
+    font-weight: bold;
+}
+
+.banner-text {
+    text-align: right;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    color: #cbcac3;
+}
+
+.banner-right__btns {
+    margin-top: 4rem;
+    display: flex;
+
+}
+
+#button-resume {
+    padding: 12px 36px;
+    border-radius: 0.5rem;
+    border: 1px solid #221e6f;
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: 18px;
+    font-family: inherit;
+}
+
+#button-works {
+    padding: 12px 36px;
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+    color: var(--black-color);
+    background: #9db5c1;
+    font-size: 18px;
+    font-family: inherit;
+    margin-right: 1rem;
+}
+
+.banner-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.banner__img {
+    width: 300px;
+}
+
+.banner__blob {
+    fill: #003554;
+}
+
+.banner__blob-img {
+    width: 25rem;
+    transition: 600ms ease;
+}
+
+.banner__blob-img:hover {
+    transform: translateY(-0.3rem);
+    transition: 600ms ease;
+
+}
+
+/* Finish Banner Styles */
+
+/* Start Media Query */
+
+@media screen and (max-width: 992px) {
+    .banner__img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .banner__img {
+        width: 250px;
+        bottom: 10%;
+        position: absolute;
+        left: 2rem;
+        top: 12rem;
+    }
+
+    .banner {
+        flex-direction: column;
+        min-height: 80%;
+    }
+
+    .banner-right {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        justify-content: flex-start;
+    }
+
+    .banner-right__btns {
+        flex-direction: column;
+        position: absolute;
+        top: 6rem;
+    }
+
+    #button-works {
+        margin-right: 0;
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .banner-right {
+        align-items: center;
+        position: unset;
+        margin-top: 2rem;
+    }
+
+    .banner {
+        justify-content: flex-start;
+    }
+
+    .banner-left {
+        margin-top: 2rem;
+    }
+
+    .banner__img {
+        width: 200px;
+        position: unset;
+    }
+
+    .banner-right__btns {
+        position: absolute;
+        top: 22rem;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #button-works {
+        margin-right: 1rem;
+        margin-top: 0;
+    }
+
+    #button-works,
+    #button-resume {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .banner__img {
+        width: 200px;
+        bottom: 10%;
+        position: unset;
+        margin-top: 5rem;
+    }
+
+    .banner-right {
+        margin: 0;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-text {
+        font-size: 1.2rem;
+    }
+
+    .banner-right__btns {
+        position: unset;
+        margin-top: 18rem;
+    }
+
+    #button-works,
+    #button-resume {
+        font-size: 1rem;
+    }
+}
+
+/* Finish Media Query */
