@@ -45,3 +45,15 @@ button {
         margin-left: 2rem;
     }
 }
+
+.titles {
+    color: var(--white-color);
+    font-size: 3rem;
+    border-bottom: 3px solid var(--white-color);
+    width: fit-content;
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}

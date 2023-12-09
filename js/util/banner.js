@@ -2,10 +2,12 @@ const h1 = document.getElementById("h1"),
     textElem = document.querySelector('.banner-text'),
     banner = document.getElementById("banner"),
     bannerButtons = document.querySelector(".banner-right__btns"),
-    bannerImg = document.querySelector('.banner__img');
+    bannerImg = document.querySelector('.banner__img'),
+    aboutSection = document.getElementById('about-container');
 
 const onScroll = (event) => {
     const scrollPosition = event.target.scrollingElement.scrollTop;
+    console.log(scrollPosition);
     if (scrollPosition > 150) {
         banner.style.backgroundSize = "150%";
         h1.style.opacity = 0;
@@ -34,6 +36,16 @@ const onScroll = (event) => {
         bannerImg.style.opacity = 1;
         bannerImg.style.translate = 0;
         bannerImg.style.scale = 1;
+
+    }
+    if (scrollPosition > 180) {
+        aboutSection.style.opacity = 1;
+        aboutSection.style.translate = 0;
+        aboutSection.style.scale = 1;
+    } else {
+        aboutSection.style.opacity = 0;
+        aboutSection.style.translate = "0 -50px";
+        aboutSection.style.scale = "0.8";
     }
 };
 
