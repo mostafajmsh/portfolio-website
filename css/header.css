@@ -24,11 +24,12 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    min-height: 60%;
+    /* height: 60%; */
     background-image: linear-gradient(to bottom, #121313, #004d7488), url(../images/banner/banner-bckgrnd.jpg);
     background-size: 180%;
     background-position: center;
     transition: 0.5s;
+    padding: 2rem 0;
 }
 
 .banner-right {
@@ -123,12 +124,13 @@
         bottom: 10%;
         position: absolute;
         left: 2rem;
-        top: 12rem;
+        top: 8rem;
     }
 
     .banner {
         flex-direction: column;
-        min-height: 80%;
+        /* position: absolute; */
+        height: 22rem;
     }
 
     .banner-right {
@@ -136,6 +138,7 @@
         top: 2rem;
         right: 2rem;
         justify-content: flex-start;
+        height: fit-content;
     }
 
     .banner-right__btns {
@@ -148,48 +151,72 @@
         margin-right: 0;
         margin-top: 2rem;
     }
+    .banner-left {
+        height: fit-content;
+    }
 
 }
 
 @media screen and (max-width: 576px) {
-    .banner-right {
-        align-items: center;
-        position: unset;
-        margin-top: 2rem;
-    }
 
     .banner {
         justify-content: flex-start;
+        padding-bottom: 0;
+        position: unset;
+        padding-bottom: 2rem;
+        height: unset;
+    }
+
+    .banner-right {
+        align-items: center;
+        position: unset;
+        height: unset;
+    }
+
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-text {
+        margin-top: 1rem;
+        font-size: 1.2rem;
     }
 
     .banner-left {
         margin-top: 2rem;
+        height: unset;
     }
 
     .banner__img {
-        width: 200px;
-        position: unset;
+        width: 120px;
     }
 
     .banner-right__btns {
-        position: absolute;
-        top: 22rem;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items: stretch;
+        position: relative;
+        margin-top: 0;
+        top: 1.5rem;
+        left: 5rem;
     }
 
     #button-works {
-        margin-right: 1rem;
-        margin-top: 0;
+        margin-right: 0;
+        margin-top: 1rem;
     }
 
     #button-works,
     #button-resume {
-        padding: 0.5rem 1rem;
+        padding: 0.5rem;
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 320px) {
+    .banner {
+        height: 25rem;
+    }
     .banner__img {
         width: 200px;
         bottom: 10%;
@@ -201,23 +228,29 @@
         margin: 0;
     }
 
-    .banner-title {
-        font-size: 2.5rem;
+    .banner-left {
+        position: relative;
+        margin-top: 0;
+        top: -22rem;
+        right: 0;
+        width: max-content;
+        height: 90%;
     }
 
     .banner-text {
-        font-size: 1.2rem;
+        margin-top: 1rem;
     }
 
     .banner-right__btns {
+        flex-direction: row;
         position: unset;
-        margin-top: 18rem;
+        margin-top: 16rem;
+    }
+    #button-works {
+        margin-top: 0;
+        margin-right: 1rem;
     }
 
-    #button-works,
-    #button-resume {
-        font-size: 1rem;
-    }
 }
 
 /* Finish Media Query */
