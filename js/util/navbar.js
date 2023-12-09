@@ -9,10 +9,9 @@ function scrollActive(){
         sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.navbar-item a[href*=' + sectionId + ']').classList.add('active')
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
         }else{
-          const prevActiveMenu = document.querySelector('.active')
-          prevActiveMenu.classList.remove('active')
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
         }
     })
 }

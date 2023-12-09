@@ -7,7 +7,6 @@ const h1 = document.getElementById("h1"),
 
 const onScroll = (event) => {
     const scrollPosition = event.target.scrollingElement.scrollTop;
-    console.log(scrollPosition);
     if (scrollPosition > 150) {
         banner.style.backgroundSize = "150%";
         h1.style.opacity = 0;
