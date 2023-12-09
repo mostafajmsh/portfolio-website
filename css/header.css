@@ -33,7 +33,6 @@ header {
 }
 
 .logo-img {
-    margin-left: 12rem;
     z-index: 10;
 }
 
@@ -190,7 +189,7 @@ body.open .background {
 }
 
 .banner__blob {
-    fill: var(--white-color);
+    fill: #cbcac3;
 }
 
 .banner__blob-img {
@@ -253,8 +252,6 @@ body.open .background {
 }
 
 /* Finish About Section styles */
-
-
 
 /* Start Media Query */
 
