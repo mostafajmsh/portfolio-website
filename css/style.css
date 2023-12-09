@@ -2,6 +2,10 @@
 @import "./variables.css";
 @import "./reset.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
     height: 100%;

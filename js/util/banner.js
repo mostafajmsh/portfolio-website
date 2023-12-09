@@ -1,6 +1,6 @@
 const h1 = document.getElementById("h1"),
     textElem = document.querySelector('.banner-text'),
-    banner = document.getElementById("banner"),
+    banner = document.getElementById("home"),
     bannerButtons = document.querySelector(".banner-right__btns"),
     bannerImg = document.querySelector('.banner__img'),
     aboutSection = document.getElementById('about-container');
