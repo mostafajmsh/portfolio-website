@@ -57,21 +57,21 @@
 .banner-right__btns {
     margin-top: 4rem;
     display: flex;
-
 }
 
 #button-resume {
-    padding: 12px 36px;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     border: 1px solid #221e6f;
     background: var(--primary-color);
     color: var(--white-color);
     font-size: 18px;
     font-family: inherit;
+    width: 50%;
 }
 
 #button-works {
-    padding: 12px 36px;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
     color: var(--black-color);
@@ -79,6 +79,7 @@
     font-size: 18px;
     font-family: inherit;
     margin-right: 1rem;
+    width: 50%;
 }
 
 .banner-left {
@@ -114,6 +115,10 @@
 @media screen and (max-width: 992px) {
     .banner__img {
         width: 300px;
+    }
+    #button-resume,
+    #button-works {
+        width: unset;
     }
 }
 
