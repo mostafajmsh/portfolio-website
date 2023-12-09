@@ -21,3 +21,27 @@ img {
 button {
     font-family: var(--primary-font);
 }
+
+.container {
+    margin: 0 12rem;
+    height: 100%;
+}
+
+@media screen and (max-width: 1120px) {
+    .container {
+        margin: 0 6rem;
+    }
+    .logo-img {
+        margin-left: 6rem;
+    }
+}
+
+@media screen and (max-width: 804px) {
+    .container {
+        margin: 0 2rem;
+    }
+
+    .logo-img {
+        margin-left: 2rem;
+    }
+}

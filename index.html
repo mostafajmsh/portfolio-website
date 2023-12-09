@@ -8,51 +8,117 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./vendor/FontAwesome5/all.min.css" />
   </head>
   <body>
     <header>
+      <nav id="navbar" class="navbar">
+        <button onclick="toggleMenu()" class="navbar-burger"></button>
+        <div class="container">
+          <a
+            class="navbar-item"
+            data-scroll="home"
+            href="#home"
+            style="animation-delay: 0.1s"
+          >
+            صفحه اصلی
+          </a>
+          <a
+            class="navbar-item"
+            data-scroll="about"
+            href="#about"
+            style="animation-delay: 0.2s"
+          >
+            درباره من
+          </a>
+          <a
+            class="navbar-item"
+            data-scroll="skills"
+            href="#skills"
+            style="animation-delay: 0.3s"
+          >
+            مهارت ها
+          </a>
+          <a
+            class="navbar-item"
+            data-scroll="servises"
+            href="#servises"
+            style="animation-delay: 0.4s"
+          >
+            خدمات
+          </a>
+          <a
+            class="navbar-item"
+            data-scroll="work"
+            href="#work"
+            style="animation-delay: 0.5s"
+          >
+            نمونه کارها
+          </a>
+          <a
+            class="navbar-item"
+            data-scroll="blog"
+            href="#blog"
+            style="animation-delay: 0.6s"
+            >بلاگ</a
+          >
+        </div>
+        <img class="logo-img"
+          src="./images/j-technologies-high-resolution-logo-transparent.png"
+          style="width: 100px"
+          alt=""
+        />
+      </nav>
       <!-- Start Banner Template -->
       <section id="banner" class="banner">
-        <div class="banner-right">
-          <h1 class="banner-title" id="h1">مصطفی جمشید</h1>
-          <h2 class="banner-text">برنامه نویس و طراح سایت</h2>
-          <div class="banner-right__btns">
-            <button id="button-resume">دانلود رزومه</button>
-            <button id="button-works">نمونه کارها</button>
+        <div class="container">
+          <div class="banner-right">
+            <h1 class="banner-title" id="h1">مصطفی جمشید</h1>
+            <h2 class="banner-text">برنامه نویس و طراح سایت</h2>
+            <div class="banner-right__btns">
+              <button id="button-resume">دانلود رزومه</button>
+              <button id="button-works">نمونه کارها</button>
+            </div>
           </div>
-        </div>
-        <div class="banner-left">
-          <div class="banner__img">
-            <svg
-              class="banner__blob"
-              viewBox="0 0 479 467"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <mask id="mask0" mask-type="alpha">
-                <path
-                  d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
-                />
-              </mask>
-              <g mask="url(#mask0)">
-                <path
-                  d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
-                />
-                <image
-                  class="banner__blob-img"
-                  x="50"
-                  y="60"
-                  href="./images/banner/profile.png"
-                />
-              </g>
-            </svg>
+          <div class="banner-left">
+            <div class="banner__img">
+              <svg
+                class="banner__blob"
+                viewBox="0 0 479 467"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+                  />
+                  <image
+                    class="banner__blob-img"
+                    x="50"
+                    y="60"
+                    href="./images/banner/profile.png"
+                  />
+                </g>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
       <!-- Finish Banner Template -->
     </header>
 
-
     <script type="text/javascript" src="./js/util/banner.js"></script>
+    <script type="text/javascript" src="./js/util/navbar.js"></script>
+    <script src="./vendor/FontAwesome5/all.min.js"></script>
+    <script>
+      const toggleMenu = () => {
+        document.body.classList.toggle("open");
+      };
+    </script>
   </body>
 </html>
