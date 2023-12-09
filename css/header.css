@@ -129,7 +129,6 @@
 
     .banner {
         flex-direction: column;
-        /* position: absolute; */
         height: 22rem;
     }
 
@@ -161,15 +160,13 @@
 
     .banner {
         justify-content: flex-start;
+        align-items: center;
         padding-bottom: 0;
         position: unset;
-        padding-bottom: 2rem;
-        height: unset;
+        height: 16rem;
     }
 
     .banner-right {
-        align-items: center;
-        position: unset;
         height: unset;
     }
 
@@ -179,26 +176,23 @@
     }
 
     .banner-text {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         font-size: 1.2rem;
     }
 
     .banner-left {
-        margin-top: 2rem;
         height: unset;
     }
 
     .banner__img {
-        width: 120px;
+        width: 180px;
+        top: 6rem;
     }
 
     .banner-right__btns {
         flex-direction: column;
         align-items: stretch;
-        position: relative;
-        margin-top: 0;
-        top: 1.5rem;
-        left: 5rem;
+        margin-top: 2rem;
     }
 
     #button-works {
@@ -219,19 +213,20 @@
     }
     .banner__img {
         width: 200px;
-        bottom: 10%;
         position: unset;
         margin-top: 5rem;
     }
 
     .banner-right {
+        position: unset;
         margin: 0;
+        align-items: center;
     }
 
     .banner-left {
         position: relative;
-        margin-top: 0;
         top: -22rem;
+        margin-top: 0;
         right: 0;
         width: max-content;
         height: 90%;
