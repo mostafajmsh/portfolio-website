@@ -86,11 +86,11 @@ body.open .background {
     transition: all 400ms ease;
 }
 
-/* .active {
+.active {
     border-bottom: 3px solid var(--white-color);
     transform: scale(1.1);
     transition: all 400ms ease;
-} */
+}
 
 /* Finish Navbar Styles */
 
