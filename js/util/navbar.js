@@ -1,4 +1,6 @@
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
+console.log(sections);
 
 function scrollActive(){
     const scrollY = window.pageYOffset
@@ -15,4 +17,15 @@ function scrollActive(){
         }
     })
 }
+
+const navLink = document.querySelectorAll('.nav__link')
+const navbarBurger = document.querySelector('.navbar-burger')
+
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.toggle('show')
+    document.body.classList.toggle("open");
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
 window.addEventListener('scroll', scrollActive)

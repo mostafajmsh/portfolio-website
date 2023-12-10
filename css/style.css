@@ -15,6 +15,7 @@ body {
     margin: 0;
     font-family: var(--primary-font);
     background: #032030;
+    transition: all 0.6s;
 }
 
 img {
@@ -24,30 +25,38 @@ img {
 }
 button {
     font-family: var(--primary-font);
+    border: none;
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+p {
+    text-align: right;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+a {
+    text-align: right;
 }
 
 .container {
     margin: 0 12rem;
     height: 100%;
+    padding: 0;
+    max-width: unset;
+    width: unset;
 }
 
-@media screen and (max-width: 1120px) {
-    .container {
-        margin: 0 6rem;
-    }
-    .logo-img {
-        margin-left: 6rem;
-    }
-}
-
-@media screen and (max-width: 804px) {
-    .container {
-        margin: 0 2rem;
-    }
-
-    .logo-img {
-        margin-left: 2rem;
-    }
+.nav {
+    flex-wrap: nowrap;
+    height: 5rem;
 }
 
 .titles {
@@ -58,6 +67,41 @@ button {
     text-align: center;
     padding: 1rem 0;
     font-weight: bold;
-    margin-top: 4rem;
+    margin-top: 8rem;
     margin-bottom: 3rem;
+}
+
+.min-title {
+    color: var(--white-color);
+    font-size: 2rem;
+    display: block;
+    text-align: right;
+    width: 100%;
+}
+
+.text {
+    color: var(--white-color);
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    word-spacing: 0.3rem;
+    color: #9db5c1;
+}
+
+@media screen and (max-width: 1120px) {
+    .container {
+        margin: 0 6rem;
+    }
+}
+
+@media screen and (max-width: 804px) {
+    .container {
+        margin: 0 2rem;
+    }
+
+    .min-title {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
 }

@@ -4,74 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./vendor/bootStrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./vendor/FontAwesome5/all.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/works.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./vendor/FontAwesome5/all.min.css" />
   </head>
   <body>
     <!-- Start ٔNavbar Template -->
-    <header>
-      <nav id="navbar" class="navbar">
-        <button onclick="toggleMenu()" class="navbar-burger"></button>
-        <div class="nav__menu container">
-          <a
-            class="navbar-item active"
-            data-scroll="home"
-            href="#home"
-            style="animation-delay: 0.1s"
-          >
-            صفحه اصلی
-          </a>
-          <a
-            class="navbar-item"
-            data-scroll="about"
-            href="#about"
-            style="animation-delay: 0.2s"
-          >
-            درباره من
-          </a>
-          <a
-            class="navbar-item"
-            data-scroll="skills"
-            href="#skills"
-            style="animation-delay: 0.3s"
-          >
-            مهارت ها
-          </a>
-          <a
-            class="navbar-item"
-            data-scroll="servises"
-            href="#servises"
-            style="animation-delay: 0.4s"
-          >
-            خدمات
-          </a>
-          <a
-            class="navbar-item"
-            data-scroll="work"
-            href="#work"
-            style="animation-delay: 0.5s"
-          >
-            نمونه کارها
-          </a>
-          <a
-            class="navbar-item"
-            data-scroll="blog"
-            href="#blog"
-            style="animation-delay: 0.6s"
-            >بلاگ</a
-          >
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__toggle" id="nav-toggle">
+          <button class="navbar-burger" onclick="toggleMenu()"></button>
         </div>
-        <img
-          class="logo-img"
-          src="./images/j-technologies-high-resolution-logo-transparent.png"
-          style="width: 100px"
-          alt=""
-        />
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active"> صفحه اصلی </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link" style="animation-delay: 0.2s">
+                درباره من
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link" style="animation-delay: 0.3s">
+                مهارت ها
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="#servises"
+                class="nav__link"
+                style="animation-delay: 0.4s"
+              >
+                خدمات
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link" style="animation-delay: 0.5s">
+                نمونه کارها
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#blog" class="nav__link" style="animation-delay: 0.6s"
+                >بلاگ</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="nav__logo">
+          <img
+            class="logo-img"
+            src="./images/j-technologies-high-resolution-logo-transparent.png"
+            style="width: 100px"
+            alt=""
+          />
+        </div>
       </nav>
     </header>
     <!-- Finish Navbar Template -->
@@ -80,7 +72,7 @@
     <section id="home" class="home banner">
       <div class="container">
         <div class="banner-right">
-          <h1 class="banner-title" id="h1">مصطفی جمشید</h1>
+          <h1 class="banner-title" id="h1">حسین قروت خوار</h1>
           <h2 class="banner-text">برنامه نویس و طراح سایت</h2>
           <div class="banner-right__btns">
             <button id="button-resume">دانلود رزومه</button>
@@ -127,8 +119,8 @@
             <img src="./images/about.jpg" alt="" />
           </div>
           <div class="about__content-right">
-            <p class="about__content-title">من مصطفی هستم</p>
-            <p class="about__content-text">
+            <p class="about__content-title min-title">من حسین هستم</p>
+            <p class="about__content-text text">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
               استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
               در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
@@ -146,57 +138,63 @@
     <section class="skills section" id="skills">
       <div id="skills-container" class="container">
         <p class="skills-title titles">مهارت ها</p>
-        <div class="skills-content">
-          <div class="row d-flex justify-content-center mt-100">
-            <div class="col-md-12 progresses">
-              <div class="js-progress progress-container">
-                <div class="progress blue">
-                  <span class="progress-left">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <span class="progress-right">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <div class="progress-value">80%</div>
-                </div>
-                <p class="progress-text">JAVASCRIPT</p>
+        <p class="skills__content-title min-title">مهارت های حرفه ای</p>
+        <p class="skills__content-text text">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+          استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+          ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی می باشد.
+        </p>
+      </div>
+      <div class="skills-content">
+        <div class="row d-flex justify-content-center mt-100 container">
+          <div class="col-md-12 progresses">
+            <div class="js-progress progress-container">
+              <div class="progress blue">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">80%</div>
               </div>
-              <div class="html-progress progress-container">
-                <div class="progress blue">
-                  <span class="progress-left">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <span class="progress-right">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <div class="progress-value">95%</div>
-                </div>
-                <p class="progress-text">HTML5</p>
+              <p class="progress-text">JAVASCRIPT</p>
+            </div>
+            <div class="html-progress progress-container">
+              <div class="progress blue">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">95%</div>
               </div>
-              <div class="css-progress progress-container">
-                <div class="progress blue">
-                  <span class="progress-left">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <span class="progress-right">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <div class="progress-value">95%</div>
-                </div>
-                <p class="progress-text">CSS3</p>
+              <p class="progress-text">HTML5</p>
+            </div>
+            <div class="css-progress progress-container">
+              <div class="progress blue">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">95%</div>
               </div>
-              <div class="ui-progress progress-container">
-                <div class="progress blue">
-                  <span class="progress-left">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <span class="progress-right">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <div class="progress-value">90%</div>
-                </div>
-                <p class="progress-text">UI/UX</p>
+              <p class="progress-text">CSS3</p>
+            </div>
+            <div class="ui-progress progress-container">
+              <div class="progress blue">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">90%</div>
               </div>
+              <p class="progress-text">UI/UX</p>
             </div>
           </div>
         </div>
@@ -204,14 +202,16 @@
     </section>
     <!-- Finish About Template -->
 
-    <script type="text/javascript" src="./js/util/banner.js"></script>
+    <script type="text/javascript" src="./js/util/effects.js"></script>
     <script type="text/javascript" src="./js/util/navbar.js"></script>
     <script src="./vendor/FontAwesome5/all.min.js"></script>
     <script src="./vendor/bootStrap/bootstrap.bundle.min.js"></script>
     <script src="./vendor/bootStrap/jquery.min.js"></script>
     <script>
+      const navMenu = document.getElementById("nav-menu");
       const toggleMenu = () => {
         document.body.classList.toggle("open");
+        navMenu.classList.toggle("show");
       };
     </script>
   </body>
