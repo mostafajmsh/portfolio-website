@@ -4,7 +4,8 @@ const h1 = document.getElementById("h1"),
     bannerButtons = document.querySelector(".banner-right__btns"),
     bannerImg = document.querySelector('.banner__img'),
     aboutSection = document.getElementById('about-container'),
-    skillsSection = document.querySelector('#skills');
+    skillsSection = document.querySelector('#skills'),
+    servicesSection = document.querySelector('#services');
 
 const onScroll = (event) => {
     const scrollPosition = event.target.scrollingElement.scrollTop;
@@ -57,6 +58,16 @@ const onScroll = (event) => {
         skillsSection.style.opacity = 0;
         skillsSection.style.translate = "0 -50px";
         skillsSection.style.scale = "0.8";
+    }
+
+    if (scrollPosition > 1880) {
+        servicesSection.style.opacity = 1;
+        servicesSection.style.translate = 0;
+        servicesSection.style.scale = 1;
+    } else {
+        servicesSection.style.opacity = 0;
+        servicesSection.style.translate = "0 -50px";
+        servicesSection.style.scale = "0.8";
     }
 };
 

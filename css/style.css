@@ -87,6 +87,12 @@ a {
     color: #9db5c1;
 }
 
+.services-bold-text {
+    color: var(--white-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 1120px) {
     .container {
         margin: 0 6rem;
