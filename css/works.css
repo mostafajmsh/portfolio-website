@@ -1,3 +1,6 @@
+@import "./fonts.css";
+@import "./variables.css";
+@import "./reset.css";
 #works {
     /* grid-column: 1/5; */
     transition: all 0.6s;
