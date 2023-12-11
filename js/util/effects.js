@@ -5,11 +5,12 @@ const h1 = document.getElementById("h1"),
     bannerImg = document.querySelector('.banner__img'),
     aboutSection = document.getElementById('about-container'),
     skillsSection = document.querySelector('#skills'),
+    workSection = document.querySelector('#works'),
     servicesSection = document.querySelector('#services');
 
 const onScroll = (event) => {
+    // effect for section scroll
     const scrollPosition = event.target.scrollingElement.scrollTop;
-    console.log(scrollPosition);
     if (scrollPosition > 400) {
         banner.style.backgroundSize = "150%";
         h1.style.opacity = 0;
@@ -69,6 +70,17 @@ const onScroll = (event) => {
         servicesSection.style.translate = "0 -50px";
         servicesSection.style.scale = "0.8";
     }
+
+    if (scrollPosition > 2450) {
+        workSection.style.opacity = 1;
+        workSection.style.translate = 0;
+        workSection.style.scale = 1;
+    } else {
+        workSection.style.opacity = 0;
+        workSection.style.translate = "0 -50px";
+        workSection.style.scale = "0.8";
+    }
+    console.log(scrollPosition);
 };
 
 document.addEventListener("scroll", onScroll);
