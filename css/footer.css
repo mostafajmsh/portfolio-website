@@ -59,7 +59,7 @@ footer .socials {
 }
 
 footer .links {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 footer ul li i {
@@ -76,6 +76,12 @@ footer .links {
 
 footer .legal {
     font-size: 12px;
+    margin: 0;
+    text-align: center;
+}
+
+footer .info {
+    font-size: 15px;
     margin: 0;
     text-align: center;
 }
@@ -136,6 +142,10 @@ different styles to a webpage based on the characteristics of the device or scre
 
     footer ul li i {
         font-size: 1rem;
+    }
+
+    footer .info {
+        font-size: 10px;
     }
 }
 

@@ -103,7 +103,7 @@ child elements. Here is a breakdown of what the code does: */
 }
 
 .banner__blob-img {
-    width: 25rem;
+    width: 45rem;
     transition: 600ms ease;
 }
 
