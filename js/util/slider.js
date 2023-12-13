@@ -12,5 +12,9 @@ const swiper = new Swiper('.swiper-container', {
         1200: {
             slidesPerView: 3
         }
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     }
 })
