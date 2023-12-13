@@ -1,3 +1,4 @@
+/* The code you provided is CSS code. It is used to style the footer section of a webpage. */
 @import "./fonts.css";
 @import "./variables.css";
 @import "./reset.css";
@@ -78,6 +79,8 @@ footer .legal {
     margin: 0;
     text-align: center;
 }
+/* The code you provided is CSS code that includes media queries. Media queries are used to apply
+different styles to a webpage based on the characteristics of the device or screen size. */
 
 @media (width > 420px) {
     footer section {

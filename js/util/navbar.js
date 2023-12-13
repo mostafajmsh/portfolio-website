@@ -1,3 +1,7 @@
+/**
+ * This JavaScript code adds an 'active' class to the navigation menu link corresponding to the
+ * currently scrolled section on the page.
+ */
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 console.log(sections);

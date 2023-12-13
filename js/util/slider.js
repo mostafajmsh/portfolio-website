@@ -1,3 +1,5 @@
+/* The code is creating a new instance of the Swiper class and assigning it to the `swiper` constant.
+The Swiper class is a JavaScript library that provides a touch-enabled slider component. */
 const swiper = new Swiper('.swiper-container', {
     speed: 800,
     loop: false,

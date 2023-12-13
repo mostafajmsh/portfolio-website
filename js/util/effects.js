@@ -1,3 +1,4 @@
+/* The code snippet is defining several constants and an event listener function in JavaScript. */
 const h1 = document.getElementById("h1"),
     textElem = document.querySelector('.banner-text'),
     banner = document.getElementById("home"),
@@ -8,6 +9,14 @@ const h1 = document.getElementById("h1"),
     workSection = document.querySelector('#works'),
     servicesSection = document.querySelector('#services');
 
+/**
+ * The function `onScroll` applies different effects to different sections of a webpage based on the
+ * scroll position.
+ * @param event - The `event` parameter represents the scroll event that is triggered when the user
+ * scrolls the page. It contains information about the scroll event, such as the target element that is
+ * being scrolled (`event.target`) and the current scroll position
+ * (`event.target.scrollingElement.scrollTop`).
+ */
 const onScroll = (event) => {
     // effect for section scroll
     const scrollPosition = event.target.scrollingElement.scrollTop;
