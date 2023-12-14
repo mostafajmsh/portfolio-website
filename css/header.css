@@ -80,6 +80,11 @@ media queries for responsive design. */
     background: transparent;
 }
 
+.active {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--white-color);
+}
+
 .active::after {
     position: absolute;
     content: '';
