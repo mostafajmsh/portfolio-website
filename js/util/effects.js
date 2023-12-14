@@ -50,7 +50,7 @@ const onScroll = (event) => {
         bannerImg.style.scale = 1;
 
     }
-    if (scrollPosition > 350) {
+    if (scrollPosition > 300) {
         aboutSection.style.opacity = 1;
         aboutSection.style.translate = 0;
         aboutSection.style.scale = 1;
@@ -60,7 +60,7 @@ const onScroll = (event) => {
         aboutSection.style.scale = "0.8";
     }
 
-    if (scrollPosition > 1000) {
+    if (scrollPosition > 800) {
         skillsSection.style.opacity = 1;
         skillsSection.style.translate = 0;
         skillsSection.style.scale = 1;
@@ -70,7 +70,7 @@ const onScroll = (event) => {
         skillsSection.style.scale = "0.8";
     }
 
-    if (scrollPosition > 1880) {
+    if (scrollPosition > 1400) {
         servicesSection.style.opacity = 1;
         servicesSection.style.translate = 0;
         servicesSection.style.scale = 1;
@@ -80,7 +80,7 @@ const onScroll = (event) => {
         servicesSection.style.scale = "0.8";
     }
 
-    if (scrollPosition > 2450) {
+    if (scrollPosition > 1800) {
         workSection.style.opacity = 1;
         workSection.style.translate = 0;
         workSection.style.scale = 1;

@@ -34,6 +34,7 @@
       border-radius: 1rem 1rem 0 0;
       height: 213px;
       width: 100%;
+      border-bottom: 1px solid #006da4;
   }
 
   .article-card__content {

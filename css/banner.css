@@ -21,8 +21,9 @@ child elements. Here is a breakdown of what the code does: */
     background-size: 180%;
     background-position: center;
     transition: 0.5s;
-    padding: 4.2rem 0 4.5rem 0;
+    padding: 5rem 0 5rem 0;
     margin-top: 5rem;
+    height: 45rem;
 }
 
 .banner .container {
@@ -64,26 +65,38 @@ child elements. Here is a breakdown of what the code does: */
 #button-resume {
     padding: 0.75rem 2.5rem;
     border-radius: 0.5rem;
-    border: 1px solid #221e6f;
-    background: var(--primary-color);
+    background: #4d8aa9;
     color: var(--white-color);
     font-size: 18px;
+    box-shadow: 0 2px 10px rgba(0, 109, 164, 0.659);
     font-family: inherit;
-    /* max-width: 200px; */
     text-wrap: nowrap;
+    transition: all 400ms ease;
+}
 
+#button-resume:hover {
+    background: var(--white-color);
+    transition: all 400ms ease;
+    color: #4d8aa9;
 }
 
 #button-works {
     padding: 0.75rem 2.5rem;
     border-radius: 0.5rem;
-    border: 1px solid var(--primary-color);
-    color: var(--black-color);
-    background: #9db5c1;
+    color: #4d8aa9;
+    background: var(--white-color);
     font-size: 18px;
+    box-shadow: 0 2px 10px rgba(0, 109, 164, 0.659);
     font-family: inherit;
     margin-right: 1rem;
     text-wrap: nowrap;
+    transition: all 400ms ease;
+}
+
+#button-works:hover {
+    background: #4d8aa9;
+    transition: all 400ms ease;
+    color: var(--white-color);
 }
 
 .banner-left {
@@ -132,8 +145,7 @@ child elements. Here is a breakdown of what the code does: */
 @media screen and (max-width: 804px) {
     .banner {
         flex-direction: column;
-        padding-top: 3rem;
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 
     .banner .container {
@@ -219,7 +231,7 @@ child elements. Here is a breakdown of what the code does: */
     }
 
     .banner__img {
-        width: 150px;
+        width: 250px;
     }
 
     .banner-right__btns {

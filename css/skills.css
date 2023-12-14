@@ -87,7 +87,6 @@ section of a website. */
     width: 90%;
     height: 90%;
     border-radius: 50%;
-    /* background: #000; */
     font-size: 24px;
     color: #fff;
     line-height: 135px;
@@ -123,6 +122,7 @@ section of a website. */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .progresses {
@@ -154,6 +154,9 @@ section of a website. */
 
 .progress-text {
     color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid var(--white-color);
 }
 
 @media screen and (max-width: 1120px) {
@@ -161,18 +164,6 @@ section of a website. */
     .progresses {
         justify-content: center;
     }
-
-}
-
-@media screen and (max-width: 804px) {
-
-}
-
-@media screen and (max-width: 622px) {
-
-}
-
-@media screen and (max-width: 400px) {
 
 }
 
