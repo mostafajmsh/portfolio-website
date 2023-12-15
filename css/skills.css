@@ -24,6 +24,7 @@ section of a website. */
     margin: 20px;
     box-shadow: none;
     position: relative;
+    flex: none;
 }
 
 .progress:after {
@@ -119,19 +120,22 @@ section of a website. */
 
 .progress-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column; */
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 .progresses {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-top: 2rem;
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    width: 100%;
 }
 
 .skills-content {
@@ -152,11 +156,22 @@ section of a website. */
     width: 100%;
 }
 
-.progress-text {
+.progress-title {
     color: var(--white-color);
     font-size: 1.5rem;
     font-weight: bold;
     border-bottom: 2px solid var(--white-color);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.progress-text .text {
+    max-width: 740px;
+    transition: all 0.5s;
+}
+
+.blue {
+    width: 150px;
 }
 
 @media screen and (max-width: 1120px) {
@@ -165,6 +180,19 @@ section of a website. */
         justify-content: center;
     }
 
+}
+
+@media screen and (max-width: 540px) {
+    .progress-container {
+        flex-direction: column;
+    }
+    .skills-content .container {
+        padding-top: 0;
+    }
+    .progress-title {
+        justify-content: center;
+        margin-top: 2rem;
+    }
 }
 
 @keyframes loading-1 {

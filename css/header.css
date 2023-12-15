@@ -10,8 +10,9 @@ media queries for responsive design. */
     position: fixed;
     width: 100%;
     z-index: 98;
-    top: 0;
     background-color: #032030;
+    top: -100px;
+    transition: all 0.8s;
 }
 
 .header .container {

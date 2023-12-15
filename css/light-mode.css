@@ -88,6 +88,7 @@ body .light {
 
 .light .banner {
     background-image: linear-gradient(to bottom, #fffffff4, #ffffff79), url(../images/banner/banner-bckgrnd.jpg);
+    transition: all 0.5s;
 }
 
 .light .banner-title {
@@ -100,6 +101,7 @@ body .light {
 
 .light .banner__blob {
     fill: #4d8aa9;
+    transition: all 0.5s;
 }
 
 /* light mode for articles */
@@ -174,13 +176,20 @@ body .light {
     background-image: linear-gradient(to bottom, #ffffffe0, #ffffffa3), url(../images/programming-background-with-person-working-with-codes-computer.jpg);
 }
 
+.light .progress-title,
 .light .progress-text {
     color: var(--dark-color);
-    border-bottom: 2px solid var(--dark-color);
+    transition: all 0.5s;
 }
 
 .works__content-image {
     box-shadow: 0 2px 10px rgba(0, 109, 164, 0.659);
+}
+
+.light .neumorphic-box {
+    background: #cfc9c9;
+    border-radius: 20px;
+    transition: all 0.5s;
 }
 
 @media screen and (max-width: 804px) {

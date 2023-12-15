@@ -31,6 +31,7 @@ child elements. Here is a breakdown of what the code does: */
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: relative;
 }
 
 .banner-right {
@@ -40,6 +41,10 @@ child elements. Here is a breakdown of what the code does: */
     height: 100%;
     justify-content: center;
     align-items: flex-start;
+    right: 0;
+    position: absolute;
+    transform: translateX(150%);
+    transition: transform 0.8s;
 }
 
 .banner-title {
@@ -105,6 +110,10 @@ child elements. Here is a breakdown of what the code does: */
     justify-content: flex-end;
     height: 100%;
     width: 50%;
+    left: 0;
+    position: absolute;
+    transform: translateX(-150%);
+    transition: transform 0.8s;
 }
 
 .banner__img {
@@ -112,11 +121,12 @@ child elements. Here is a breakdown of what the code does: */
 }
 
 .banner__blob {
-    fill: #cbcac3;
+    fill: #787876;
+    transition: all 0.5s;
 }
 
 .banner__blob-img {
-    width: 45rem;
+    width: 46rem;
     transition: 600ms ease;
 }
 
@@ -158,6 +168,7 @@ child elements. Here is a breakdown of what the code does: */
         justify-content: flex-start;
         height: fit-content;
         width: 100%;
+        position: unset;
     }
 
     .banner-title {
@@ -184,6 +195,7 @@ child elements. Here is a breakdown of what the code does: */
         justify-content: flex-end;
         align-items: flex-end;
         width: 100%;
+        position: unset;
     }
 
     .banner__img {

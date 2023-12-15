@@ -2,12 +2,15 @@
 @import "./variables.css";
 @import "./reset.css";
 
+#about {
+    transition: all 0.6s;
+}
+
 .about .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all 0.6s;
 }
 
 .about-content {
@@ -27,9 +30,21 @@
     width: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.about__content-left img {
+.neumorphic-box {
+    height: 300px;
+    width: 250px;
+    background: #2c4263;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+    transition: all 0.5s;
+    display: flex;
+}
+
+.neumorphic-box img {
     width: 300px;
     border-radius: 0.5rem;
 }
@@ -66,9 +81,5 @@
 
     .about__content-title {
         font-size: 1.5rem;
-    }
-
-    .about__content-left img {
-        width: 200px;
     }
 }

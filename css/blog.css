@@ -15,10 +15,6 @@
     width: 100%;
   }
 
-  #blog .swiper-slide {
-    max-width: 370px;
-  }
-
   .article-card {
       margin: 3rem 1rem;
       transition: all 400ms ease;
@@ -69,3 +65,11 @@
       color: var(--white-color);
       background-color: var(--primary-color);
   }
+
+@media screen and (max-width: 768px) {
+
+    #blog .swiper-slide {
+        max-width: 376px;
+        justify-self: center;
+    }
+}

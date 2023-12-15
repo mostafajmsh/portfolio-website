@@ -89,6 +89,16 @@ a {
     color: #9db5c1;
 }
 
+.hide-section {
+    opacity: 0;
+    transform: translate(0, -50px) scale(0.8);
+}
+
+.show-section {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+}
+
 @media screen and (max-width: 1120px) {
     .container {
         margin: 0 6rem;
