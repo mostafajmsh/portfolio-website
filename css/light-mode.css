@@ -36,8 +36,7 @@ body .light {
 
 .light .header {
     background-color: var(--white-color);
-    box-shadow: 0 2px 10px rgba(0, 109, 164, 0.659);
-
+    box-shadow: 0 -4px 10px rgba(0, 109, 164, 0.659);
 }
 
 .light .nav__item {

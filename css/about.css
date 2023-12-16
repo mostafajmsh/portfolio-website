@@ -39,7 +39,7 @@
     background: #2c4263;
     border-radius: 20px;
     margin: 20px;
-    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+    box-shadow: 0 -5px 9px rgba(130, 166, 216, 0.45), 0 -5px 9px rgba(94,104,121,0.3);
     transition: all 0.5s;
     display: flex;
 }

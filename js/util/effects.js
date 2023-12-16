@@ -26,7 +26,7 @@ const onScroll = (event) => {
         bannerSection.style.backgroundSize = "180%";
         bannerSection.style.opacity = 1
     }
-    // toggleSectionVisibility(bannerSection, 0);
+    toggleSectionVisibility(bannerSection, -1);
     toggleSectionVisibility(aboutSection, bannerSection.offsetHeight - 300);
     toggleSectionVisibility(skillsSection, bannerSection.offsetHeight + aboutSection.offsetHeight - 300);
     toggleSectionVisibility(servicesSection, bannerSection.offsetHeight + aboutSection.offsetHeight + skillsSection.offsetHeight - 300);
@@ -41,15 +41,13 @@ document.addEventListener("scroll", onScroll);
 document.addEventListener("DOMContentLoaded", () => {
     const leftElement = document.querySelector(".banner-left");
     const rightElement = document.querySelector(".banner-right");
+    const siteHeader = document.querySelector(".header");
 
+    // Delay the Banner Elements animation for better visibility
     setTimeout(() => {
         leftElement.style.transform = "translateX(0)";
         rightElement.style.transform = "translateX(0)";
     }, 500);
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    const siteHeader = document.querySelector(".header");
 
     // Delay the header animation for better visibility
     setTimeout(() => {

@@ -1,10 +1,7 @@
-/**
- * This JavaScript code adds an 'active' class to the navigation menu link corresponding to the
- * currently scrolled section on the page.
- */
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
-console.log(sections);
+const navLinks = document.querySelectorAll('.nav__link')
+const navbarBurger = document.querySelector('.navbar-burger')
 
 function scrollActive() {
     const scrollY = window.pageYOffset
@@ -12,49 +9,33 @@ function scrollActive() {
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
+        const sectionId = current.getAttribute('id')
 
+        const link = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
+            link.classList.add('active')
         } else {
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
+            link.classList.remove('active')
         }
     })
 }
 
-const navLink = document.querySelectorAll('.nav__link')
-const navbarBurger = document.querySelector('.navbar-burger')
-
-function linkAction() {
+// Function to toggle navigation menu visibility and set body open/close class
+function toggleNavMenu() {
     const navMenu = document.getElementById('nav-menu')
     navMenu.classList.toggle('show')
-    document.body.classList.toggle("open");
+    document.body.classList.toggle('open')
 }
-navLink.forEach(n => n.addEventListener('click', linkAction))
 
+// Attach click event listener to each navigation link to toggle the menu
+navLinks.forEach(link => link.addEventListener('click', toggleNavMenu))
+
+// Scroll event listener for handling scroll activity
 window.addEventListener('scroll', scrollActive)
 
-/* The `navbarBurger.addEventListener('click', () => { ... })` code block is adding an event listener
-to the navbarBurger element, which is triggered when the element is clicked. */
+// Click event listener for the navbar burger icon to toggle body class and update the icon
 navbarBurger.addEventListener('click', () => {
-    navbarBurger.innerHTML = ''
-/* The code block you provided is responsible for dynamically changing the icon inside the
-`navbarBurger` element based on the class name of the `document.body` element. */
-    if (document.body.className === 'light') {
-        navbarBurger.insertAdjacentHTML('beforeend', `
-        <i class="fas fa-bars" style="font-size: 2rem; color: #006da4;"></i>
-        `)
-    } else if (document.body.className === 'light open') {
-        navbarBurger.insertAdjacentHTML('beforeend', `
-        <i class="fas fa-xmark" style="font-size: 2rem; color: #006da4;"></i>
-        `)
-    } else if (document.body.className === '') {
-        navbarBurger.insertAdjacentHTML('beforeend', `
-        <i class="fas fa-bars" style="font-size: 2rem; color: var(--white-color);"></i>
-        `)
-    } else if (document.body.className === 'open') {
-        navbarBurger.insertAdjacentHTML('beforeend', `
-        <i class="fas fa-xmark" style="font-size: 2rem; color: var(--white-color);"></i>
-        `)
-    }
+    const isOpen = document.body.classList.contains('open')
+    const iconClass = isOpen ? 'fa-xmark' : 'fa-bars'
+    navbarBurger.innerHTML = `<i class="fas ${iconClass}" style="font-size: 2rem; color: #4daddd;"></i>`
 })

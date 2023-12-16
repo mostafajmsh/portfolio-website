@@ -13,6 +13,7 @@ media queries for responsive design. */
     background-color: #032030;
     top: -100px;
     transition: all 0.8s;
+    box-shadow: 0 -4px 10px rgba(0, 109, 164, 0.659);
 }
 
 .header .container {
@@ -86,6 +87,10 @@ media queries for responsive design. */
     border-bottom: 2px solid var(--white-color);
 }
 
+.light .active {
+    border-bottom: 2px solid #006da4;
+}
+
 .active::after {
     position: absolute;
     content: '';
@@ -105,8 +110,8 @@ media queries for responsive design. */
 /* Start Theme Toggle Styles */
 
 .switch {
-    width: 80px;
-    height: 40px;
+    width: 60px;
+    height: 30px;
     border-radius: 20px;
     background-color: #006da4;
     position: relative;
@@ -117,8 +122,8 @@ media queries for responsive design. */
 }
 
 .flicker {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
     position: absolute;
@@ -130,7 +135,7 @@ media queries for responsive design. */
 }
 
 .light .flicker {
-    transform: translateX(40px);
+    transform: translateX(30px);
 }
 
 .moon {
@@ -139,15 +144,15 @@ media queries for responsive design. */
     border-radius: 10px;
     box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
     position: absolute;
-    top: 5px;
-    left: 45px;
+    top: 0;
+    left: 30px;
 }
 
 .sun {
     color: gold;
     position: absolute;
-    font-size: 1.2rem;
-    top: 11px;
+    font-size: 1rem;
+    top: 7px;
     left: 7px;
     display: flex;
 }
