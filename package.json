@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-website",
+  "version": "1.2.0",
+  "description": "![preview img](preview.jpeg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mostafajmsh/portfolio-website.git"
+  },
+  "author": "mostafajmsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mostafajmsh/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/mostafajmsh/portfolio-website#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
