@@ -4,17 +4,6 @@ section of a website. */
 @import "./variables.css";
 @import "./reset.css";
 
-#skills {
-    transition: all 0.6s;
-}
-
-.skills #skills-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .progress {
     width: 150px;
     height: 150px !important;
@@ -81,7 +70,6 @@ section of a website. */
     border-right: 0;
     -webkit-transform-origin: center right;
     transform-origin: center right;
-    animation: loading-1 1.8s linear forwards;
 }
 
 .progress .progress-value {
@@ -98,32 +86,17 @@ section of a website. */
 }
 
 .progress.blue .progress-bar {
-    /* border-color: #049dff; */
-    border-color: #006da4;
+    border-color: #1d4ed8;
 }
 
-.js-progress .progress.blue .progress-left .progress-bar {
-    animation: loading-js 1.5s linear forwards 1.8s;
-}
-
-.html-progress .progress.blue .progress-left .progress-bar {
-    animation: loading-html 1.5s linear forwards 1.8s;
-}
-
-.css-progress .progress.blue .progress-left .progress-bar {
-    animation: loading-css 1.5s linear forwards 1.8s;
-}
-
-.ui-progress .progress.blue .progress-left .progress-bar {
-    animation: loading-ui 1.5s linear forwards 1.8s;
+.dark .progress.blue .progress-bar {
+    border-color: #f87171;
 }
 
 .progress-container {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
     width: 100%;
 }
 
@@ -138,61 +111,8 @@ section of a website. */
     width: 100%;
 }
 
-.skills-content {
-    width: 100%;
-    background-image: linear-gradient(to bottom, #032030e0, #032030a3), url(../images/programming-background-with-person-working-with-codes-computer.jpg);
-    background-position: center;
-    background-size: cover;
-    padding: 0;
-    margin-top: 3rem;
-}
-
-.skills-content .container {
-    backdrop-filter: blur(5px);
-    padding: 4rem 0;
-}
-
-.mt-100 {
-    width: 100%;
-}
-
-.progress-title {
-    color: var(--white-color);
-    font-size: 1.5rem;
-    font-weight: bold;
-    border-bottom: 2px solid var(--white-color);
-    display: flex;
-    justify-content: flex-end;
-}
-
-.progress-text .text {
-    max-width: 740px;
-    transition: all 0.5s;
-}
-
 .blue {
     width: 150px;
-}
-
-@media screen and (max-width: 1120px) {
-
-    .progresses {
-        justify-content: center;
-    }
-
-}
-
-@media screen and (max-width: 540px) {
-    .progress-container {
-        flex-direction: column;
-    }
-    .skills-content .container {
-        padding-top: 0;
-    }
-    .progress-title {
-        justify-content: center;
-        margin-top: 2rem;
-    }
 }
 
 @keyframes loading-1 {
