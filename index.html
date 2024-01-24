@@ -1,98 +1,291 @@
 <!DOCTYPE html>
-<html lang="fa-IR" dir="rtl">
+<html lang="fa-IR" dir="rtl" class="scroll-smooth h-full dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mostafa's Portfolio</title>
     <link rel="stylesheet" href="./vendor/bootStrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./vendor/FontAwesome5/all.min.css" />
     <link rel="stylesheet" href="./vendor/SwiperSlider/swiper.css" />
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/banner.css" />
-    <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/skills.css" />
-    <link rel="stylesheet" href="./css/services.css" />
-    <link rel="stylesheet" href="./css/works.css" />
-    <link rel="stylesheet" href="./css/blog.css" />
-    <link rel="stylesheet" href="./css/contact.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/light-mode.css" />
+    <link rel="stylesheet" href="./styles/output.css" />
   </head>
-  <body>
+  <body
+    class="rtl:font-primaryFont ltr:font-enPrimaryFont bg-white dark:bg-[#13131d] h-full transition-all duration-500"
+  >
     <!-- Start ٔNavbar Template -->
-    <header class="header">
-      <nav class="nav container">
-        <div class="header__btns">
-          <div class="nav__toggle" id="nav-toggle">
-            <button class="navbar-burger" onclick="toggleMenu()">
+    <header
+      class="main-header md:flex -top-20 h-20 justify-center items-center w-full md:top-auto fixed left-0 md:fixed md:shadow-sm md:w-full md:bg-blue-700 md:right-0 md:bottom-0 md:h-16 z-50 bg-white dark:bg-[#292931] backdrop-blur-lg transition-all duration-500 shadow-md dark:shadow-slate-800"
+    >
+      <nav
+        class="nav flex justify-between w-full items-center font-bold h-full px-4 md:px-1"
+      >
+        <div
+          class="nav-content h-full w-full justify-between transition-all flex md:!flex"
+        >
+          <div
+            class="header__btns justify-center cursor-pointer md:justify-start w-max flex items-center"
+          >
+            <div
+              class="switch z-50 w-14 h-8 rounded-2xl relative bg-sky-500 dark:bg-sky-950"
+            >
               <i
-                class="fas fa-bars"
-                style="font-size: 2rem; color: #4daddd"
+                class="fas fa-sun sun text-amber-400 absolute flex top-0 bottom-0 my-auto left-1 text-lg"
               ></i>
-            </button>
+              <div
+                class="flicker w-6 h-6 rounded-full bg-white absolute top-0 bottom-0 right-1 my-auto dark:-translate-x-6 transition-all"
+              ></div>
+              <i
+                class="fas fa-moon moon absolute text-slate-100 flex top-0 bottom-0 my-auto right-1 text-lg"
+              ></i>
+            </div>
           </div>
-          <div class="switch">
-            <i class="fas fa-sun sun"></i>
-            <div class="flicker"></div>
-            <div class="moon"></div>
-          </div>
-        </div>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active"> صفحه اصلی </a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link" style="animation-delay: 0.2s">
-                درباره من
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link" style="animation-delay: 0.3s">
-                مهارت ها
-              </a>
-            </li>
-            <li class="nav__item">
-              <a
-                href="#services"
-                class="nav__link"
-                style="animation-delay: 0.4s"
+          <div
+            class="nav__menu h-full ltr:pl-4 ltr:lg:pl-1 place-items-center md:w-full md:justify-center md:transition-all md:duration-200 w-full flex items-center mr-2.5 ltr:md:pl-1 ltr:md:mr-1 ltr:es:m-0 ltr:es:p-0 transition-all"
+            id="nav-menu"
+          >
+            <ul
+              class="nav__list h-full md:w-full md:ml-2 flex justify-start items-center gap-8 xl:gap-2 md:gap-4 es:gap-0"
+            >
+              <li
+                class="nav__item w-full md:px-0 items-center h-full text-white flex"
               >
-                خدمات
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#works" class="nav__link" style="animation-delay: 0.5s">
-                نمونه کارها
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#blog" class="nav__link" style="animation-delay: 0.6s"
-                >بلاگ</a
-              >
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link" style="animation-delay: 0.6s"
-                >نظرات</a
-              >
-            </li>
-            <li class="nav__item">
-              <a href="#footer" class="nav__link" style="animation-delay: 0.6s"
-                >ارتباط با من</a
-              >
-            </li>
-          </ul>
+                <a
+                  href="#home"
+                  class="nav__link my-auto first-item gap-1 es:text-xs md:gap-0 text-nowrap hover:text-white w-full md:text-l md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-base font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200"
+                >
+                  <i class="fas fa-home"></i>
+                  <p class="md:hidden">صفحه اصلی</p>
+                </a>
+              </li>
+              <li class="nav__item w-full md:px-0 flex items-center h-full">
+                <a
+                  href="#skills"
+                  class="nav__link gap-1 es:text-xs md:gap-0 text-nowrap hover:text-white w-full md:text-l md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-base font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200"
+                  style="animation-delay: 0.3s"
+                >
+                  <i class="fas fa-laptop-code"></i>
+                  <p class="md:hidden">مهارت ها</p>
+                </a>
+              </li>
+              <li class="nav__item w-full md:px-0 flex items-center h-full">
+                <a
+                  href="#services"
+                  class="nav__link gap-1 es:text-xs md:gap-0 text-nowrap hover:text-white w-full md:text-l md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-base font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200"
+                  style="animation-delay: 0.4s"
+                >
+                  <i class="fas fa-gem"></i>
+                  <p class="md:hidden">خدمات</p>
+                </a>
+              </li>
+              <li class="nav__item w-full md:px-0 flex items-center h-full">
+                <a
+                  href="#works"
+                  class="nav__link gap-1 es:text-xs md:gap-0 text-nowrap hover:text-white w-full md:text-l md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-base font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200"
+                  style="animation-delay: 0.5s"
+                >
+                  <i class="fas fa-briefcase"></i>
+                  <p class="md:hidden">نمونه کارها</p>
+                </a>
+              </li>
+              <li class="nav__item w-full md:px-0 flex items-center h-full">
+                <a
+                  href="#blog"
+                  class="nav__link gap-1 es:text-xs md:gap-0 text-nowrap hover:text-white w-full md:text-l md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-base font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200"
+                  style="animation-delay: 0.6s"
+                >
+                  <i class="fas fa-rss"></i>
+                  <p class="md:hidden">بلاگ</p>
+                </a>
+              </li>
+              <li class="nav__item w-full md:px-0 flex items-center h-full">
+                <a
+                  href="#comment"
+                  class="nav__link comment-link gap-1 es:text-xs md:gap-0 text-nowrap hover:text-white w-full md:text-l md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-base font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200"
+                  style="animation-delay: 0.6s"
+                >
+                  <i class="fas fa-comment"></i>
+                  <p class="md:hidden">نظرات</p>
+                </a>
+              </li>
+              <li class="nav__item w-full md:px-0 flex items-center h-full">
+                <a
+                  href="#footer"
+                  class="nav__link footer-link gap-1 es:text-xs md:gap-0 text-nowrap hover:text-white w-full md:text-l md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-base font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200"
+                  style="animation-delay: 0.6s"
+                >
+                  <i class="fas fa-envelope"></i>
+                  <p class="md:hidden">ارتباط با من</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="nav__lang-changer ltr:flex-row-reverse text-white md:text-black flex ltr:lg:flex-col-reverse ltr:lg:justify-center items-center w-max gap-1.5 cursor-pointer"
+          >
+            <p
+              class="lang__changer-text dark:text-slate-300 text-darkColor md:text-black md:hidden text-nowrap"
+            >
+              fa-IR
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-darkColor dark:text-slate-300 md:text-slate-400"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+              />
+            </svg>
+          </div>
         </div>
-        <div class="nav__logo">
-          <img
-            class="logo-img"
-            src="./images/j-technologies-high-resolution-logo-transparent.png"
-            style="width: 100px"
-            alt=""
-          />
+      </nav>
+    </header>
+    <header
+      class="scrolled-header hidden h-max w-max py-4 bg-blue-700 rounded-lg shadow-none top-8 -right-20 md:hidden fixed z-50 dark:bg-[#292931] backdrop-blur-lg transition-all duration-500 dark:shadow-slate-800"
+    >
+      <div
+        class="header-close absolute transition-all -left-6 cursor-pointer top-3 rounded bg-blue-700 dark:bg-[#292931] flex md:!hidden justify-left items-center p-2"
+      >
+        <i class="fas fa-arrow-left text-white"></i>
+      </div>
+      <nav class="nav flex justify-between items-center font-bold h-full mx-4">
+        <div
+          class="nav-content flex-col h-full w-full justify-between transition-all flex md:!flex"
+        >
+          <div
+            class="header__btns md:rotate-90 md:scale-75 justify-center md:justify-start w-max flex items-center"
+          >
+            <div
+              class="switch z-50 w-14 h-8 rounded-2xl relative bg-sky-500 dark:bg-sky-950"
+            >
+              <i
+                class="fas fa-sun sun text-amber-400 absolute flex top-0 bottom-0 my-auto left-1 text-lg"
+              ></i>
+              <div
+                class="flicker w-6 h-6 rounded-full bg-white absolute top-0 bottom-0 right-1 my-auto dark:-translate-x-6 transition-all"
+              ></div>
+              <i
+                class="fas fa-moon moon absolute text-slate-100 flex top-0 bottom-0 my-auto right-1 text-lg"
+              ></i>
+            </div>
+          </div>
+
+          <div
+            class="nav__menu h-full place-items-center md:w-full md:justify-center md:transition-all md:duration-200 w-full flex items-center transition-all"
+            id="nav-menu"
+          >
+            <ul
+              class="nav__list flex-col w-full gap-4 h-full md:w-full md:ml-2 flex justify-start items-center lg:gap-2 md:gap-4 es:gap-0"
+            >
+              <li
+                class="nav__item justify-center mt-0 w-full md:px-0 items-center h-full text-white flex"
+              >
+                <a
+                  href="#home"
+                  class="nav__link justify-center h-10 my-auto first-item gap-1 md:gap-0 text-nowrap hover:text-white w-full md:text-l md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center rounded-lg text-lg lg:text-base font-bold relative text-slate-300 md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all dark:hover:border-b-white md:hover:border-none hover:border-b-2 hover:border-solid hover:border-b-blue-700 hover:bg-blue-700 dark:hover:bg-gradient-to-r dark:hover:from-sky-400 dark:hover:via-indigo-500 dark:hover:to-red-400 dark:hover:text-white dark:hover:rounded-xl"
+                >
+                  <i class="fas fa-home flex w-full text-center"></i>
+                </a>
+              </li>
+              <li
+                class="nav__item justify-center mt-0 w-full md:px-0 flex items-center h-full"
+              >
+                <a
+                  href="#skills"
+                  class="nav__link justify-center h-10 gap-1 md:gap-0 text-nowrap hover:text-white w-full md:text-l md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center rounded-lg text-lg lg:text-base font-bold relative text-slate-300 md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all dark:hover:border-b-white md:hover:border-none hover:border-b-2 hover:border-solid hover:border-b-blue-700 hover:bg-blue-700 dark:hover:bg-gradient-to-r dark:hover:from-sky-400 dark:hover:via-indigo-500 dark:hover:to-red-400 dark:hover:text-white dark:hover:rounded-xl"
+                  style="animation-delay: 0.3s"
+                >
+                  <i class="fas fa-laptop-code flex w-full text-center"></i>
+                </a>
+              </li>
+              <li
+                class="nav__item justify-center mt-0 w-full md:px-0 flex items-center h-full"
+              >
+                <a
+                  href="#services"
+                  class="nav__link justify-center h-10 gap-1 md:gap-0 text-nowrap hover:text-white w-full md:text-l md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center rounded-lg text-lg lg:text-base font-bold relative text-slate-300 md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all dark:hover:border-b-white md:hover:border-none hover:border-b-2 hover:border-solid hover:border-b-blue-700 hover:bg-blue-700 dark:hover:bg-gradient-to-r dark:hover:from-sky-400 dark:hover:via-indigo-500 dark:hover:to-red-400 dark:hover:text-white dark:hover:rounded-xl"
+                  style="animation-delay: 0.4s"
+                >
+                  <i class="fas fa-gem flex w-full text-center"></i>
+                </a>
+              </li>
+              <li
+                class="nav__item justify-center mt-0 w-full md:px-0 flex items-center h-full"
+              >
+                <a
+                  href="#works"
+                  class="nav__link justify-center h-10 gap-1 md:gap-0 text-nowrap hover:text-white w-full md:text-l md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center rounded-lg text-lg lg:text-base font-bold relative text-slate-300 md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all dark:hover:border-b-white md:hover:border-none hover:border-b-2 hover:border-solid hover:border-b-blue-700 hover:bg-blue-700 dark:hover:bg-gradient-to-r dark:hover:from-sky-400 dark:hover:via-indigo-500 dark:hover:to-red-400 dark:hover:text-white dark:hover:rounded-xl"
+                  style="animation-delay: 0.5s"
+                >
+                  <i class="fas fa-briefcase flex w-full text-center"></i>
+                </a>
+              </li>
+              <li
+                class="nav__item justify-center mt-0 w-full md:px-0 flex items-center h-full"
+              >
+                <a
+                  href="#blog"
+                  class="nav__link justify-center h-10 gap-1 md:gap-0 text-nowrap hover:text-white w-full md:text-l md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center rounded-lg text-lg lg:text-base font-bold relative text-slate-300 md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all dark:hover:border-b-white md:hover:border-none hover:border-b-2 hover:border-solid hover:border-b-blue-700 hover:bg-blue-700 dark:hover:bg-gradient-to-r dark:hover:from-sky-400 dark:hover:via-indigo-500 dark:hover:to-red-400 dark:hover:text-white dark:hover:rounded-xl"
+                  style="animation-delay: 0.6s"
+                >
+                  <i class="fas fa-rss flex w-full text-center"></i>
+                </a>
+              </li>
+              <li
+                class="nav__item justify-center mt-0 w-full md:px-0 flex items-center h-full"
+              >
+                <a
+                  href="#comment"
+                  class="nav__link justify-center h-10 comment-link gap-1 md:gap-0 text-nowrap hover:text-white w-full md:text-l md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center rounded-lg text-lg lg:text-base font-bold relative text-slate-300 md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all dark:hover:border-b-white md:hover:border-none hover:border-b-2 hover:border-solid hover:border-b-blue-700 hover:bg-blue-700 dark:hover:bg-gradient-to-r dark:hover:from-sky-400 dark:hover:via-indigo-500 dark:hover:to-red-400 dark:hover:text-white dark:hover:rounded-xl"
+                  style="animation-delay: 0.6s"
+                >
+                  <i class="fas fa-comment flex w-full text-center"></i>
+                </a>
+              </li>
+              <li
+                class="nav__item justify-center mt-0 w-full md:px-0 flex items-center h-full"
+              >
+                <a
+                  href="#footer"
+                  class="nav__link justify-center h-10 footer-link gap-1 md:gap-0 text-nowrap hover:text-white w-full md:text-l md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center rounded-lg text-lg lg:text-base font-bold relative text-slate-300 md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all dark:hover:border-b-white md:hover:border-none hover:border-b-2 hover:border-solid hover:border-b-blue-700 hover:bg-blue-700 dark:hover:bg-gradient-to-r dark:hover:from-sky-400 dark:hover:via-indigo-500 dark:hover:to-red-400 dark:hover:text-white dark:hover:rounded-xl"
+                  style="animation-delay: 0.6s"
+                >
+                  <i class="fas fa-envelope flex w-full text-center"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="nav__lang-changer mt-4 mx-auto text-white md:text-black flex flex-col-reverse justify-center items-center w-max gap-1.5 cursor-pointer"
+          >
+            <p
+              class="lang__changer-text dark:text-slate-300 text-slate-200 md:text-black md:hidden text-nowrap"
+            >
+              fa-IR
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-slate-200 dark:text-slate-300 md:text-slate-400"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+              />
+            </svg>
+          </div>
         </div>
       </nav>
     </header>
@@ -101,166 +294,518 @@
     <!-- Start Main Template -->
     <main>
       <!-- Start Banner Template -->
-      <section id="home" class="home banner">
-        <div class="container">
-          <div class="banner-right">
-            <h1 class="banner-title" id="h1">مصطفی جمشیدی</h1>
-            <h2 class="banner-text">برنامه نویس و طراح سایت</h2>
-            <div class="banner-right__btns">
-              <button id="button-resume">دانلود رزومه</button>
-              <button id="button-works">نمونه کارها</button>
+      <section
+        id="home"
+        style="background-size: 180%"
+        class="home banner h-full mt-20 md:mt-0 md:h-80 es:h-60 flex items-start lg:items-start transition-all duration-700 opacity-0 w-full bg-center translate-y-[1800px] bg-lightBanner dark:bg-darkBanner py-32 lg:pt-20 md:py-10"
+      >
+        <div class="container relative flex flex-col">
+          <div
+            class="banner-content relative flex justify-between items-start w-full md:flex-col md:justify-start"
+          >
+            <div
+              class="banner-right flex w-full flex-col h-full justify-center items-start md:items-center"
+            >
+              <h1
+                class="banner-title transition-all duration-1000 opacity-0 -translate-y-3 ltr:sm:text-4xl ltr:es:text-2xl rtl:es:text-3xl text-nowrap rtl:font-titleFont ltr:font-enTitleFont text-6xl lg:text-5xl text-blue-700 text-right font-bold"
+                id="h1"
+              >
+                <span
+                  class="text-white bg-blue-700 dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 rounded-tr-[7rem] pr-4 rounded-l-[4rem] rounded-br-[14rem]"
+                  >مصطفی</span
+                >
+                <span
+                  class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+                  >جمشیدی</span
+                >
+              </h1>
+              <h2
+                class="banner-text transition-all duration-1000 opacity-0 -translate-y-3 es:text-xl text-nowrap font-bold text-right mt-12 md:mt-6 text-3xl lg:text-2xl text-darkColor dark:text-slate-300"
+              >
+                توسعه دهنده وب ـ فرانت‌اند
+              </h2>
+              <div
+                class="banner-right__btns absolute ltr:left-0 ltr:md:left-auto top-64 md:top-96 es:top-72 md:flex-row mt-16 translate-y-20 opacity-0 transition-all duration-1000 flex gap-3 lg:flex-col"
+              >
+                <a
+                  href="https://github.com/mostafajmsh"
+                  class="py-3 es:py-2 px-10 es:px-5 text-nowrap opacity-100 es:text-sm text-xl no-underline transition-all hover:transition-all hover:bg-white hover:text-blue-700 rounded-lg bg-slate-700 text-white flex items-center justify-center gap-2"
+                  id="button-resume"
+                  >گیت هاب <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="#works"
+                  id="button-works"
+                  class="py-3 es:py-2 px-10 es:px-5 text-nowrap opacity-100 es:text-sm gap-2 text-xl no-underline transition-all hover:transition-all hover:bg-white hover:text-blue-700 rounded-lg bg-blue-700 dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 text-slate-50 flex justify-center items-center"
+                  >نمونه کارها <i class="fas fa-briefcase"></i
+                ></a>
+              </div>
+            </div>
+            <div
+              class="banner-left flex justify-end items-center lg:justify-center md:justify-center h-full w-full relative left-0"
+            >
+              <div
+                class="banner__img -translate-y-20 opacity-0 transition-all duration-1000 w-[400px] lg:w-[350px] md:w-[300px] es:w-[200px] top-16 lg:top-16 md:top-8 absolute rtl:left-0 rtl:md:left-auto md:justify-center lg:right-0 md:right-auto lg:mx-auto"
+              >
+                <svg
+                  class="banner__blob fill-blue-700 dark:fill-[url(#gradient)] hover:transition-all hover:duration-300 transition-all duration-300"
+                  viewBox="0 0 479 467"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <linearGradient
+                      id="gradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
+                      <stop offset="0%" style="stop-color: #38bdf8" />
+                      <stop offset="50%" style="stop-color: #6366f1" />
+                      <stop offset="100%" style="stop-color: #f87171" />
+                    </linearGradient>
+                  </defs>
+                  <mask id="mask0" mask-type="alpha">
+                    <path
+                      d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+                    />
+                  </mask>
+                  <g mask="url(#mask0)">
+                    <path
+                      d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+                    />
+                    <image
+                      class="banner__blob-img inline w-[55rem] es:w-[45rem] transition-all duration-300 hover:translate-y-[-5px] hover:transition-all hover:duration-300"
+                      x="-90"
+                      y="20"
+                      href="./images/IMG_9692.png"
+                    />
+                  </g>
+                </svg>
+              </div>
             </div>
           </div>
-          <div class="banner-left">
-            <div class="banner__img">
-              <svg
-                class="banner__blob"
-                viewBox="0 0 479 467"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
-                  />
-                  <image
-                    class="banner__blob-img"
-                    x="-140"
-                    y="-200"
-                    href="./images/IMG_9651.png"
-                  />
-                </g>
-              </svg>
+          <div
+            class="about absolute top-[26rem] lg:top-[30rem] md:top-[34rem] es:top-[26rem] translate-y-20 opacity-0 transition-all duration-1000"
+          >
+            <div class="about-content flex justify-start w-full">
+              <div class="about__content-right">
+                <p
+                  class="text-4xl es:text-2xl w-full text-right text-blue-700 rtl:font-titleFont ltr:font-enTitleFont"
+                >
+                  <span
+                    class="text-white bg-blue-700 dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 pr-2 rounded-tr-[7rem] rounded-br-[14rem] rounded-l-[4rem]"
+                    >در</span
+                  >
+                  <span
+                    class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+                    >باره من</span
+                  >
+                </p>
+                <p
+                  class="about__content-title min-title dark:text-slate-300 text-right text-2xl es:text-xl mt-8"
+                >
+                  من مصطفی هستم
+                </p>
+                <p
+                  class="about__content-text dark:text-slate-300 text-right md:ml-2 text-xl md:text-base es:text-sm mt-2"
+                >
+                  با سلام! من مصطفی هستم، توی حوزه توسعه وب- فرانت‌اند فعالیت
+                  میکنم. عاشق کدزنی و البته قهوه هستم. اگر تو هم این دو رو دوست
+                  داری پس دوست خوب منی 😁. بقول استادم هیچکس توی برنامه‌نویسی
+                  نمیتونه بگه من ۱۰۰درصد بلدم و همه در حال یادگیری هستیم و من
+                  واقعا از یادگیری مطالب جدید توی این حوزه لذت میبرم. توانایی من
+                  شامل ایجاد و توسعه انواع وبسایت با کاربری های مختلف و ایجاد
+                  استایل های تعاملی و زیبا و پیاده سازی منطق اجزای مختلف سایت
+                  بصورت کاملا بهینه با جاوااسکریپت هست. برای اطلاع از مهارت های
+                  من لطفا
+                  <a
+                    href="#skills"
+                    class="text-blue-700 dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text hover:text-red-500 font-bold transition-all hover:transition-all"
+                    >اینجا</a
+                  >
+                  کلیک کنید. همینطور برای مشاهده نمونه کارهای من از
+                  <a
+                    href="#works"
+                    class="text-blue-700 dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text hover:text-red-500 font-bold transition-all hover:transition-all"
+                    >این لینک</a
+                  >
+                  استفاده کنید. اگر سوالی دارید یا به همکاری در پروژه‌ای
+                  علاقه‌مند هستید، خوشحال میشم که از من بپرسید. با تشکر از حضور
+                  شما در اینجا!
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Finish Banner Template -->
 
-      <!-- Start About Template -->
-      <section class="about section" id="about">
-        <div id="about-container" class="container">
-          <p class="about-title titles">درباره من</p>
-          <div class="about-content">
-            <div class="about__content-left">
-              <div class="neumorphic-box">
-                <img src="./images/IMG_9651.png" alt="" />
-              </div>
-            </div>
-            <div class="about__content-right">
-              <p class="about__content-title min-title">من مصطفی هستم</p>
-              <p class="about__content-text text">
-                با سلام! من مصطفی هستم، یک برنامه‌نویس فرانت‌اند با اشتیاق و
-                علاقه به دنیای توسعه و طراحی وب. از زمانی که با این حوزه آشنا
-                شدم، عشق من به ایجاد رابط‌های کاربری جذاب و به‌روز و توسعه
-                وبسایت‌های کارآمد رشد یافته است. توانمندی‌های من در تکنولوژی‌های
-                مبتنی بر وب از جمله HTML، CSS و JavaScript می باشد. با استفاده
-                از این ابزارها، تمرکز من بر روی ایجاد تجربه کاربری بهینه و جذاب
-                برای بازدیدکنندگان است. پروژه‌های من معمولاً دارای رویکرد
-                نوآورانه و طراحی شیک هستند. در هنگام کدنویسی، تلاش می‌کنم تا
-                استانداردهای بهترین عمل و بهینه‌ترین راهکارها را به کار ببرم تا
-                برنامه‌هایی از کیفیت بالا و عملکرد عالی ارائه دهم. اگر سوالی
-                دارید یا به همکاری در پروژه‌ای علاقه‌مند هستید، خوشحال می‌شوم که
-                از من بپرسید. با تشکر از حضور شما در اینجا!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Finish About Template -->
-
       <!-- Start Skills Template -->
-      <section class="skills section" id="skills">
-        <div id="skills-container" class="container">
-          <p class="skills-title titles">مهارت ها</p>
-          <p class="skills__content-title min-title">مهارت های حرفه ای</p>
-          <p class="skills__content-text text">
-            با توجه به این که برنامه‌نویس فرانت‌اند هستم، مهارت‌های من در
-            زمینه‌های مختلف تکنولوژی و طراحی وب از جمله JavaScript، HTML، CSS و
-            UI/UX قدرتمند است. در زیر به برخی از این مهارت‌ها می‌پردازم:
+      <section
+        class="skills md:overflow-x-hidden section mt-[30rem] xl:mt-[32rem] lg:mt-[44rem] md:mt-[42rem] sm:mt-[48rem] es:mt-[44rem] transition-all duration-500"
+        id="skills"
+      >
+        <div
+          id="skills-container"
+          class="container flex flex-col justify-center items-center"
+        >
+          <p
+            class="skills-title rtl:font-titleFont ltr:font-enTitleFont text-blue-700 text-5xl es:text-3xl"
+          >
+            <span
+              class="text-white bg-blue-700 pr-4 rounded-tr-[7rem] rounded-br-[14rem] rounded-l-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
+              >مها</span
+            >
+            <span
+              class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+              >رت ها</span
+            >
+          </p>
+
+          <p
+            class="skills__content-title min-title text-blue-700 rtl:font-titleFont ltr:font-enTitleFont text-3xl es:text-xl text-right w-full mt-8"
+          >
+            <span
+              class="bg-blue-700 pr-2 text-white rounded-tr-[7rem] rounded-br-[14rem] rounded-l-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
+              >مها</span
+            >
+            <span
+              class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+              >رت های حرفه ای</span
+            >
+          </p>
+          <p
+            class="skills__content-text text-right -translate-y-20 opacity-0 transition-all duration-1000 mt-8 text-xl dark:text-slate-300 es:text-base"
+          >
+            به عنوان یک برنامه‌نویس فرانت‌اند با تجربه در زمینه‌های مختلف
+            تکنولوژی و طراحی وب، من توانسته‌ام مهارت‌های قدرتمندی را در این
+            زمینه‌ها کسب کنم. در زیر به برخی از این مهارت‌ها با توضیحات بیشتر
+            اشاره می‌کنم:
           </p>
         </div>
-        <div class="skills-content">
-          <div class="row d-flex justify-content-center mt-100 container">
-            <div class="col-md-12 progresses">
-              <div class="js-progress progress-container">
-                <div class="progress blue">
+        <div
+          class="skills-content flex bg-lightSkills dark:bg-darkSkills justify-center w-full bg-center bg-cover p-0 mt-12"
+        >
+          <div
+            class="row flex justify-center container backdrop:blur-sm dark:backdrop-blur-md sm:pt-0"
+          >
+            <div class="progresses xl:justify-center">
+              <div class="js-progress progress-container sm:flex-col">
+                <div
+                  class="progress translate-y-20 opacity-0 transition-all duration-1000 flex items-center blue"
+                >
+                  <span class="progress-left left-0">
+                    <span class="progress-bar"></span>
+                  </span>
+                  <span class="progress-right">
+                    <span class="progress-bar"></span>
+                  </span>
+                  <div
+                    class="progress-value text-darkColor dark:text-slate-300 rtl:font-titleFont ltr:font-enTitleFont"
+                  >
+                    80%
+                  </div>
+                </div>
+                <div
+                  class="progress-text__wrapper -translate-y-20 opacity-0 transition-all duration-1000 text-darkColor text-right"
+                >
+                  <ol class="flex flex-col sm:justify-center sm:mt-4">
+                    <li
+                      class="progress-title relative text-end text-blue-700 pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-blue-700 dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0"
+                    >
+                      <span
+                        class="text-white bg-blue-700 dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 pl-2 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem]"
+                        >JAVA</span
+                      >
+                      <span
+                        class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+                        >SCRIPT</span
+                      >
+                    </li>
+                    <li
+                      class="progress-text md:text-base es:text-sm mt-2 list-disc text-darkColor dark:text-slate-300 font-primaryFont font-bold text-xl max-w-[740px] transition-all duration-500"
+                    >
+                      تسلط بر جاوااسکریپت و توانایی برنامه‌نویسی تعاملی در محیط
+                      وب.
+                    </li>
+                    <li
+                      class="progress-text md:text-base es:text-sm mt-2 list-disc text-darkColor dark:text-slate-300 font-primaryFont font-bold text-xl max-w-[740px] transition-all duration-500"
+                    >
+                      تجربه در استفاده از جدیدترین ویژگی‌ها و API‌های
+                      جاوااسکریپت.
+                    </li>
+                    <li
+                      class="progress-text md:text-base es:text-sm mt-2 list-disc text-darkColor dark:text-slate-300 font-primaryFont font-bold text-xl max-w-[740px] transition-all duration-500"
+                    >
+                      شناخت و استفاده پرکاربرد ترین کتابخانه های جاوااسکریپت
+                      (SweetAlert, SwiperJS, ChartJS, ...) جهت افزایش سرعت و
+                      کیفیت کدها.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="html-progress progress-container sm:flex-col">
+                <div
+                  class="progress translate-y-20 opacity-0 transition-all duration-1000 flex items-center blue"
+                >
                   <span class="progress-left">
                     <span class="progress-bar"></span>
                   </span>
                   <span class="progress-right">
                     <span class="progress-bar"></span>
                   </span>
-                  <div class="progress-value">80%</div>
+                  <div
+                    class="progress-value text-darkColor dark:text-slate-300 rtl:font-titleFont ltr:font-enTitleFont"
+                  >
+                    95%
+                  </div>
                 </div>
-                <div class="progress-text">
-                  <p class="progress-title">JAVASCRIPT</p>
-                  <p class="progress-text text">
-                    مسلط به زبان برنامه‌نویسی JavaScript و توانایی توسعه
-                    اپلیکیشن‌های تعاملی و دینامیک
-                  </p>
+                <div
+                  class="progress-text__wrapper -translate-y-20 opacity-0 transition-all duration-1000 text-darkColor dark:text-slate-300"
+                >
+                  <ol class="flex flex-col sm:justify-center sm:mt-4">
+                    <li
+                      class="progress-title relative text-end text-blue-700 pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-blue-700 dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0"
+                    >
+                      <span
+                        class="text-white bg-blue-700 pl-2 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
+                        >HTM</span
+                      >
+                      <span
+                        class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+                        >L5</span
+                      >
+                    </li>
+                    <li
+                      class="progress-text md:text-base es:text-sm mt-2 list-disc text-right text-darkColor dark:text-slate-300 font-primaryFont font-bold text-xl max-w-[740px] transition-all duration-500"
+                    >
+                      پیاده سازی کد HTML به صورت ساختارمند و قابل خوانایی.
+                    </li>
+                    <li
+                      class="progress-text md:text-base es:text-sm mt-2 list-disc text-right text-darkColor dark:text-slate-300 font-primaryFont font-bold text-xl max-w-[740px] transition-all duration-500"
+                    >
+                      اطلاع از جدیدترین استانداردها و تکنولوژی‌های مرتبط با HTML
+                      جهت افزایش بازدید و سئوی سایت.
+                    </li>
+                  </ol>
                 </div>
               </div>
-              <div class="html-progress progress-container">
-                <div class="progress blue">
+              <div class="css-progress progress-container sm:flex-col">
+                <div
+                  class="progress translate-y-20 opacity-0 transition-all duration-1000 flex items-center blue"
+                >
                   <span class="progress-left">
                     <span class="progress-bar"></span>
                   </span>
                   <span class="progress-right">
                     <span class="progress-bar"></span>
                   </span>
-                  <div class="progress-value">95%</div>
+                  <div
+                    class="progress-value text-darkColor dark:text-slate-300 rtl:font-titleFont ltr:font-enTitleFont"
+                  >
+                    95%
+                  </div>
                 </div>
-                <div class="progress-text">
-                  <p class="progress-title">HTML5</p>
-                  <p class="progress-text text">
-                    تخصص در نوشتن کدهای HTML با رعایت استانداردهای برنامه‌نویسی
-                    و توانایی ساختاردهی صحیح وبسایت‌ها.
-                  </p>
+                <div
+                  class="progress-text__wrapper -translate-y-20 opacity-0 transition-all duration-1000 text-darkColor dark:text-slate-300"
+                >
+                  <ol class="flex flex-col sm:justify-center sm:mt-4">
+                    <li
+                      class="progress-title relative text-end text-blue-700 pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-blue-700 dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0"
+                    >
+                      <span
+                        class="text-white bg-blue-700 pl-2 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
+                        >CS</span
+                      >
+                      <span
+                        class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+                        >S3</span
+                      >
+                    </li>
+                    <li
+                      class="progress-text md:text-base es:text-sm mt-2 list-disc text-right text-darkColor dark:text-slate-300 font-primaryFont font-bold text-xl max-w-[740px] transition-all duration-500"
+                    >
+                      طراحی و اجرای استایل‌های زیبا و واکنش‌گرا با استفاده از
+                      CSS.
+                    </li>
+                    <li
+                      class="progress-text md:text-base es:text-sm mt-2 list-disc text-right text-darkColor dark:text-slate-300 font-primaryFont font-bold text-xl max-w-[740px] transition-all duration-500"
+                    >
+                      توانایی استفاده از Flexbox و Grid و همینطور فریم ورک های
+                      محبوب CSS برای طراحی صفحات وب پویا و انعطاف‌پذیر.
+                    </li>
+                  </ol>
                 </div>
               </div>
-              <div class="css-progress progress-container">
-                <div class="progress blue">
+              <div class="ui-progress progress-container sm:flex-col">
+                <div
+                  class="progress translate-y-20 opacity-0 transition-all duration-1000 flex items-center blue"
+                >
                   <span class="progress-left">
                     <span class="progress-bar"></span>
                   </span>
                   <span class="progress-right">
                     <span class="progress-bar"></span>
                   </span>
-                  <div class="progress-value">95%</div>
+                  <div
+                    class="progress-value text-darkColor dark:text-slate-300 rtl:font-titleFont ltr:font-enTitleFont"
+                  >
+                    90%
+                  </div>
                 </div>
-                <div class="progress-text">
-                  <p class="progress-title">CSS3</p>
-                  <p class="progress-text text">
-                    تجربه گسترده در طراحی و استایل‌دهی به وبسایت‌ها با استفاده
-                    از CSS، از جمله ایجاد ترکیبات رنگی جذاب و ایجاد طرح‌های شیک
-                    و منظم.
-                  </p>
+                <div
+                  class="progress-text__wrapper -translate-y-20 opacity-0 transition-all duration-1000 text-darkColor dark:text-slate-300"
+                >
+                  <ol class="flex flex-col sm:justify-center sm:mt-4">
+                    <li
+                      class="progress-title relative text-end text-blue-700 pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-blue-700 dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0"
+                    >
+                      <span
+                        class="text-white bg-blue-700 pl-2 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
+                        >UI/</span
+                      >
+                      <span
+                        class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+                        >UX</span
+                      >
+                    </li>
+                    <li
+                      class="progress-text md:text-base es:text-sm mt-2 list-disc text-right text-darkColor dark:text-slate-300 font-primaryFont font-bold text-xl max-w-[740px] transition-all duration-500"
+                    >
+                      طراحی تجربه کاربری (UX) مؤثر با توجه به نیازها و ترجیحات
+                      کاربران. ایجاد رابط کاربری (UI) زیبا و کاربرپسند.
+                    </li>
+                  </ol>
                 </div>
               </div>
-              <div class="ui-progress progress-container">
-                <div class="progress blue">
-                  <span class="progress-left">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <span class="progress-right">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <div class="progress-value">90%</div>
-                </div>
-                <div class="progress-text">
-                  <p class="progress-title">UI/UX</p>
-                  <p class="progress-text text">
-                    طراحی تجربه کاربری (UX) مؤثر با توجه به نیازها و ترجیحات
-                    کاربران. ایجاد رابط کاربری (UI) زیبا و کاربرپسند.
-                  </p>
-                </div>
-              </div>
+            </div>
+            <div class="more-skills w-full mt-8 pb-16">
+              <ol
+                class="progress-text__wrapper -translate-y-20 opacity-0 transition-all duration-1000 flex flex-col w-full sm:justify-center sm:mt-8"
+              >
+                <li
+                  class="progress-title relative text-start text-white pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-white dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0"
+                >
+                  <span
+                    class="text-blue-700 bg-white pr-2 rounded-tr-[7rem] rounded-br-[14rem] rounded-l-[4rem] dark:bg-gradient-to-r dark:text-white from-sky-400 via-indigo-500 to-red-400"
+                    >فریم</span
+                  >
+                  <span
+                    class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+                    >ورک ها</span
+                  >
+                </li>
+                <li
+                  class="progress-text md:text-base es:text-sm mr-8 mt-4 es:mt-2 list-disc text-right text-slate-200 dark:text-slate-300 font-primaryFont font-bold text-xl transition-all duration-500"
+                >
+                  استفاده از فریم‌ورک‌های مدرن مانند Tailwind CSS و Bootstrap
+                  برای تسهیل در طراحی و استایل‌دهی.
+                </li>
+                <li
+                  class="progress-text md:text-base es:text-sm mr-8 mt-4 es:mt-2 list-disc text-right text-slate-200 dark:text-slate-300 font-primaryFont font-bold text-xl transition-all duration-500"
+                >
+                  توانمندی در سفارشی‌سازی و تنظیمات پیشرفته با استفاده از این
+                  فریم‌ورک‌ها.
+                </li>
+              </ol>
+              <ol
+                class="progress-text__wrapper -translate-y-20 opacity-0 transition-all duration-1000 flex flex-col w-full mt-8 sm:justify-center sm:mt-8"
+              >
+                <li
+                  class="progress-title relative text-start text-white pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-white dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0"
+                >
+                  <span
+                    class="text-blue-700 bg-white pr-2 rounded-tr-[7rem] rounded-br-[14rem] rounded-l-[4rem] dark:text-white dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
+                    >مها</span
+                  >
+                  <span
+                    class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+                    >رت های ارتباطی</span
+                  >
+                </li>
+                <li
+                  class="progress-text md:text-base es:text-sm mr-8 mt-4 es:mt-2 list-disc text-right text-slate-200 dark:text-slate-300 font-primaryFont font-bold text-xl transition-all duration-500"
+                >
+                  توانایی ارتباط فعال و مؤثر با تیم توسعه و تیم‌های مختلف.
+                </li>
+                <li
+                  class="progress-text md:text-base es:text-sm mr-8 mt-4 es:mt-2 list-disc text-right text-slate-200 dark:text-slate-300 font-primaryFont font-bold text-xl transition-all duration-500"
+                >
+                  توانایی تبیین و توضیح مفاهیم فنی به صورت واضح و قابل درک برای
+                  مخاطبین غیر فنی.
+                </li>
+              </ol>
+              <ol
+                class="progress-text__wrapper -translate-y-20 opacity-0 transition-all duration-1000 flex flex-col w-full mt-8 sm:justify-center sm:mt-8"
+              >
+                <li
+                  class="progress-title relative text-start text-white pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-white dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0"
+                >
+                  <span
+                    class="text-blue-700 bg-white pr-2 rounded-tr-[7rem] rounded-br-[14rem] rounded-l-[4rem] dark:text-white dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
+                    >ابزا</span
+                  >
+                  <span
+                    class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+                    >رها و تکنولوژی ها</span
+                  >
+                </li>
+                <li
+                  class="progress-text md:text-base es:text-sm mr-8 mt-4 es:mt-2 list-disc text-right text-slate-200 dark:text-slate-300 font-primaryFont font-bold text-xl transition-all duration-500"
+                >
+                  استفاده ماهرانه از npm برای مدیریت پکیج‌ها و وابستگی‌ها.
+                </li>
+                <li
+                  class="progress-text md:text-base es:text-sm mr-8 mt-4 es:mt-2 list-disc text-right text-slate-200 dark:text-slate-300 font-primaryFont font-bold text-xl transition-all duration-500"
+                >
+                  مهارت در استفاده از Git و GitHub برای مدیریت ورژن کنترل
+                  پروژه‌ها.
+                </li>
+                <li
+                  class="progress-text md:text-base es:text-sm mr-8 mt-4 es:mt-2 list-disc text-right text-slate-200 dark:text-slate-300 font-primaryFont font-bold text-xl transition-all duration-500"
+                >
+                  آشنایی با اصول RESTful API و توانایی مدیریت و استفاده از این
+                  نوع API در پروژه ها آنها.
+                </li>
+                <li
+                  class="progress-text md:text-base es:text-sm mr-8 mt-4 es:mt-2 list-disc text-right text-slate-200 dark:text-slate-300 font-primaryFont font-bold text-xl transition-all duration-500"
+                >
+                  تجربه در استفاده از Postman برای تست و دیباگ درخواست‌های API.
+                </li>
+                <li
+                  class="progress-text md:text-base es:text-sm mr-8 mt-4 es:mt-2 list-disc text-right text-slate-200 dark:text-slate-300 font-primaryFont font-bold text-xl transition-all duration-500"
+                >
+                  مهارت در طراحی و کدنویسی بر اساس طرح‌های ایجاد شده در Figma.
+                </li>
+              </ol>
+              <ol
+                class="progress-text__wrapper -translate-y-20 opacity-0 transition-all duration-1000 flex flex-col w-full mt-8 sm:justify-center sm:mt-8"
+              >
+                <li
+                  class="progress-title relative text-start text-white pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-white dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0"
+                >
+                  <span
+                    class="text-blue-700 bg-white pr-2 rounded-tr-[7rem] rounded-br-[14rem] rounded-l-[4rem] dark:text-white dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
+                    >موا</span
+                  >
+                  <span
+                    class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+                    >رد بیشتر</span
+                  >
+                </li>
+                <li
+                  class="progress-text md:text-base es:text-sm mr-8 mt-4 es:mt-2 list-disc text-right text-slate-200 dark:text-slate-300 font-primaryFont font-bold text-xl transition-all duration-500"
+                >
+                  توانمندی در اجرای تست‌های واحد و اطمینان از عملکرد صحیح کد.
+                </li>
+                <li
+                  class="progress-text md:text-base es:text-sm mr-8 mt-4 es:mt-2 list-disc text-right text-slate-200 dark:text-slate-300 font-primaryFont font-bold text-xl transition-all duration-500"
+                >
+                  تجربه در بهینه‌سازی وبسایت‌ها برای بهبود سرعت و بهره‌وری.
+                </li>
+              </ol>
             </div>
           </div>
         </div>
@@ -268,39 +813,132 @@
       <!-- Finish Skills Template -->
 
       <!-- Start Services Template -->
-      <section class="services section" id="services">
-        <div id="services-container" class="container">
-          <p class="services-title titles">خدمات من</p>
-          <div class="servises-content">
-            <div class="col-4 services__content-box">
-              <i class="fas fa-paintbrush services__content-icon"></i>
-              <p class="text services-bold-text">طراحی سایت</p>
-              <p class="services__content-text text">
-                ما در زمینه طراحی سایت با استفاده از آخرین تکنولوژی‌ها و
-                رویکردهای نوین فعالیت می‌کنیم. از طراحی ریسپانسیو و تطابق با
-                تمامی دستگاه‌ها تا ایجاد تجربه کاربری جذاب، ما تلاش می‌کنیم تا
-                وبسایت شما نه تنها ظاهری دلپذیر داشته باشد بلکه عملکرد مطلوبی
-                نیز داشته باشد.
+      <section
+        class="services md:overflow-x-hidden section mt-16 transition-all duration-500"
+        id="services"
+      >
+        <div
+          id="services-container"
+          class="container flex flex-col items-center"
+        >
+          <p
+            class="skills-title rtl:font-titleFont ltr:font-enTitleFont text-blue-700 text-5xl es:text-3xl"
+          >
+            <span
+              class="text-white bg-blue-700 pr-4 rounded-tr-[7rem] rounded-br-[14rem] rounded-l-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
+              >خد</span
+            >
+            <span
+              class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+              >مات من</span
+            >
+          </p>
+
+          <p class="text-right mt-8 text-xl dark:text-slate-300 es:text-base">
+            با تجربه بیش از 2 سال در عرصه توسعه فرانت‌اند، من مصطفی جمشیدی به
+            عنوان یک توسعه‌دهنده فرانت‌اند فعال و خلاق با افتخار خدمات خود را
+            ارائه می‌دهم. اگر به دنبال یک توسعه‌دهنده مستقل و متخصص در زمینه
+            توسعه وب هستید، با من همراه باشید.
+          </p>
+          <div
+            class="servises-content relative dark:bg-[#1d1d20] dark:rounded-xl py-8 flex flex-wrap items-center justify-center gap-8 w-full mt-20 before:content-[''] before:w-[40%] before:h-[50%] xl:before:w-[45%] lg:before:w-[50%] lg:before:h-[50%] md:before:w-[40%] md:before:h-[80%] md:before:mt-96 before:absolute before:bg-gradient-to-b before:from-blue-700 before:to-blue-300 dark:before:bg-gradient-to-br dark:before:from-sky-400 dark:before:via-indigo-500 dark:before:to-red-400 before:z-0 before:top-0 before:bottom-0 before:my-auto"
+          >
+            <div
+              class="bg-white dark:bg-[#292931] web-design -translate-y-20 opacity-0 transition-all duration-1000 services__content-box flex flex-col items-center shadow-lg py-16 px-4 rounded-lg max-w-72 min-w-60 h-[432px] hover:-translate-y-1 hover:duration-200"
+            >
+              <i
+                class="fas fa-paintbrush services__content-icon text-blue-700 text-2xl dark:text-red-400"
+              ></i>
+              <p
+                class="services-bold-text dark:text-slate-300 text-xl font-bold mt-2"
+              >
+                طراحی سایت
+              </p>
+              <p
+                class="services__content-text dark:text-slate-300 text-center mt-2"
+              >
+                با استفاده از تخصص من در زمینه HTML، CSS و JavaScript،
+                وبسایت‌های شما با طراحی جذاب و عملکرد بالا به وجود می‌آیند. از
+                جزئیات کوچک نظیر ترتیب المان‌ها تا بهینه‌سازی کدهای منبع، هر
+                جنبه از وبسایت با دقت بالا توسط من انجام می‌شود.
               </p>
             </div>
-            <div class="col-4 services__content-box">
-              <i class="fas fa-laptop-code services__content-icon"></i>
-              <p class="text services-bold-text">تجربه کاربری</p>
-              <p class="services__content-text text">
-                با توجه به اهمیت تجربه کاربری (UX) در موفقیت یک سایت، ما با
-                رویکردهای منحصر به فرد به طراحی UX می‌پردازیم. از تحلیل
-                نیازمندی‌ها تا ایجاد پروتوتایپ‌های تعاملی، هدف ما ارائه یک تجربه
-                فوق‌العاده و کاربرپسند به مشتریان شما است.
+            <div
+              class="bg-white dark:bg-[#292931] user-experience -translate-y-20 opacity-0 transition-all duration-1000 services__content-box flex flex-col items-center shadow-lg py-16 px-4 rounded-lg max-w-72 min-w-60 h-[432px] hover:-translate-y-1 hover:duration-200"
+            >
+              <i
+                class="fas fa-laptop-code services__content-icon text-blue-700 text-2xl dark:text-red-400"
+              ></i>
+              <p
+                class="services-bold-text dark:text-slate-300 text-xl font-bold mt-2"
+              >
+                تجربه کاربری
+              </p>
+              <p
+                class="services__content-text dark:text-slate-300 text-center mt-2"
+              >
+                با تمرکز بر تجربه کاربری، تلاش دارم تا ارتقاء و بهبود مستمری در
+                تجربه کاربران وبسایت‌های شما داشته باشم. از تحلیل کاربری تا
+                طراحی رابط کاربری جذاب، همه با هدف ایجاد تجربه کاربری بی‌نظیر
+                انجام می‌شود.
               </p>
             </div>
-            <div class="col-4 services__content-box">
-              <i class="fas fa-layer-group services__content-icon"></i>
-              <p class="text services-bold-text">گرافیک</p>
-              <p class="services__content-text text">
-                ما با توجه به ترکیب هنر و علم، سعی داریم وبسایت‌هایی با طراحی
-                زیبا و همچنین کارآمد ارائه دهیم. از انتخاب رنگ‌ها و فونت‌ها تا
-                ایجاد ساختار ارگونومیک، همه جزئیات طراحی به دقت مورد بررسی قرار
-                می‌گیرند تا شما بهترین حضور آنلاین را داشته باشید.
+            <div
+              class="bg-white dark:bg-[#292931] responsive-design -translate-y-20 opacity-0 transition-all duration-1000 services__content-box flex flex-col items-center shadow-lg py-16 px-4 rounded-lg max-w-72 min-w-60 h-[432px] hover:-translate-y-1 hover:duration-200"
+            >
+              <i
+                class="fas fa-layer-group services__content-icon text-blue-700 text-2xl dark:text-red-400"
+              ></i>
+              <p
+                class="services-bold-text dark:text-slate-300 text-xl font-bold mt-2"
+              >
+                توسعه ریسپانسیو
+              </p>
+              <p
+                class="services__content-text dark:text-slate-300 text-center mt-2"
+              >
+                وبسایت‌هایی که توسط من طراحی و توسعه می‌شوند، با طراحی سازگار با
+                انواع دستگاه‌ها به خوبی نمایش داده می‌شوند. این امکان به کاربران
+                شما اجازه می‌دهد تا بدون محدودیت از تجربه وبسایت شما لذت ببرند.
+              </p>
+            </div>
+            <div
+              class="bg-white dark:bg-[#292931] support-box translate-y-20 opacity-0 transition-all duration-1000 services__content-box flex flex-col items-center shadow-lg py-16 px-4 rounded-lg max-w-72 min-w-60 h-[432px] hover:-translate-y-1 hover:duration-200"
+            >
+              <i
+                class="fas fa-headset services__content-icon text-blue-700 text-2xl dark:text-red-400"
+              ></i>
+              <p
+                class="services-bold-text dark:text-slate-300 text-xl font-bold mt-2"
+              >
+                پشتیبانی و نگهداری
+              </p>
+              <p
+                class="services__content-text dark:text-slate-300 text-center mt-2"
+              >
+                پس از اجرا، به مدت دو ماه، من برای پشتیبانی فنی در دسترس شما
+                هستم. هر گونه مشکل یا سوال فنی را با سرعت حل و پاسخ می‌دهم تا
+                وبسایت شما همیشه در حال اجرا و بهینه باشد.
+              </p>
+            </div>
+            <div
+              class="bg-white dark:bg-[#292931] seo-box -translate-y-20 opacity-0 transition-all duration-1000 services__content-box flex flex-col items-center shadow-lg py-16 px-4 rounded-lg max-w-72 min-w-60 h-[432px] hover:-translate-y-1 hover:duration-200"
+            >
+              <i
+                class="fab fa-searchengin text-blue-700 text-2xl dark:text-red-400"
+              ></i>
+              <p
+                class="services-bold-text text-xl dark:text-slate-300 text-center font-bold mt-2"
+              >
+                بهینه‌سازی برای موتورهای جستجو (SEO)
+              </p>
+              <p
+                class="services__content-text dark:text-slate-300 text-center mt-2"
+              >
+                با ارائه خدمات بهینه‌سازی برای موتورهای جستجو، وبسایت شما بهترین
+                شانس را برای جلب ترافیک آگاه و باکیفیت از موتورهای جستجو خواهد
+                داشت. از کلمات کلیدی مهم گرفته تا بهینه‌سازی ساختار لینک‌ها، همه
+                جنبه‌های مربوط به SEO توسط من مدیریت می‌شوند.
               </p>
             </div>
           </div>
@@ -309,67 +947,118 @@
       <!-- Finish Services Template -->
 
       <!-- Start Works Template -->
-      <section class="works section" id="works">
-        <div id="works-container" class="container">
-          <p class="works-title titles">نمونه کارها</p>
-          <div class="works-content">
-            <div class="works__content image3">
+      <section
+        class="works section transition-all duration-500 mt-16"
+        id="works"
+      >
+        <div
+          id="works-container"
+          class="container flex flex-col items-center justify-center"
+        >
+          <p
+            class="portfolio-title rtl:font-titleFont ltr:font-enTitleFont text-blue-700 text-5xl es:text-3xl"
+          >
+            <span
+              class="text-white bg-blue-700 pr-4 rounded-tr-[7rem] rounded-br-[14rem] rounded-l-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
+              >نمو</span
+            >
+            <span
+              class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+              >نه کارها</span
+            >
+          </p>
+          <div
+            class="works-content mt-8 grid gap-4 grid-cols-3 grid-rows-customRows xl:grid-rows-xlCustomRows lg:grid-rows-lgCustomRows md:flex md:flex-col md:justify-center md:items-center"
+          >
+            <div
+              class="works__content overflow-y-auto bg-white group h-full md:h-60 w-full rounded-2xl shadow-lg transition-all duration-300 relative image1 col-start-1 col-end-3 row-start-1 row-end-2 dark:after:absolute dark:after:content-[''] dark:after:hover:hidden dark:before:hover:hidden dark:after:w-full dark:after:h-full dark:after:bottom-0 dark:after:right-0 dark:after:bg-gradient-to-t dark:after:from-indigo-500/90 dark:after:via-red-400/50 dark:after:to-sky-400/0 dark:after:z-50"
+            >
               <img
-                src="images/tablet-with-smartphone-devices-tech-generative-ai.jpg"
+                src="images/delino-desktop.png"
                 alt=""
-                class="works__content-image"
+                class="works__content-image h-[200rem] md:h-[100rem] w-full transition-all duration-300"
               />
-              <div class="icon__wrapper">
-                <a href="#">
-                  <i class="fas fa-search work__link"></i>
+              <div
+                class="icon__wrapper absolute left-0 right-0 top-0 -bottom-40 m-auto w-full h-full bg-gradient-to-b from-blue-700/0 to-blue-700/100 flex items-center justify-center opacity-0 invisible rounded-2xl transition-all duration-300 cursor-pointer group-hover:opacity-100 group-hover:visible group-hover:transition-all group-hover:duration-300 group-hover:bottom-0 dark:bg-gradient-to-b dark:from-sky-400/0 dark:via-indigo-500/50 dark:to-red-400/100"
+              >
+                <a class="flex flex-col justify-center items-center" href="#">
+                  <i class="fas fa-search work__link text-4xl text-white"></i>
+                  <p class="font-bold text-2xl text-white">SCROLL FOR MORE</p>
+                  <p class="font-bold text-2xl text-white">CLICK FOR LIVE</p>
                 </a>
               </div>
             </div>
-            <div class="works__content image6">
+            <div
+              class="works__content group bg-white h-full w-full rounded-2xl shadow-lg transition-all duration-300 relative image2 row-start-2 row-end-4 overflow-y-auto dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:h-full dark:after:bottom-0 dark:after:right-0 dark:before:hover:opacity-0 dark:after:hover:opacity-0 dark:after:bg-gradient-to-t dark:after:from-indigo-500/90 dark:after:via-red-400/50 dark:after:to-sky-400/0 dark:after:z-50"
+            >
               <img
-                src="images/top-view-unrecognizable-hacker-performing-cyberattack-night.jpg"
+                src="images/delino-mobile.png"
                 alt=""
-                class="works__content-image"
+                class="works__content-image absolute h-[350rem] w-full transition-all duration-300"
               />
-              <div class="icon__wrapper">
-                <a href="#">
-                  <i class="fas fa-search work__link"></i>
+              <div
+                class="icon__wrapper absolute left-0 right-0 top-0 -bottom-40 m-auto w-full h-full bg-gradient-to-b from-blue-700/0 to-blue-700/100 flex items-center justify-center opacity-0 invisible rounded-2xl transition-all duration-300 cursor-pointer group-hover:opacity-100 group-hover:visible group-hover:transition-all group-hover:duration-300 group-hover:bottom-0 dark:bg-gradient-to-b dark:from-sky-400/0 dark:via-indigo-500/50 dark:to-red-400/100"
+              >
+                <a class="flex flex-col justify-center items-center" href="#">
+                  <i class="fas fa-search work__link text-4xl text-white"></i>
+                  <p class="font-bold text-2xl text-white">SCROLL FOR MORE</p>
+                  <p class="font-bold text-2xl text-white">CLICK FOR LIVE</p>
                 </a>
               </div>
             </div>
-            <div class="works__content image7">
-              <img
-                src="images/abstract-glowing-flame-drops-electric-illumination-generative-ai_188544-8092.jpg"
-                alt=""
-                class="works__content-image"
-              />
-              <div class="icon__wrapper">
+            <div
+              class="works__content group h-full w-full bg-white rounded-2xl shadow-lg transition-all duration-300 relative overflow-hidden image3 col-start-3 col-end-5 dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:h-full dark:after:bottom-0 dark:after:right-0 dark:after:bg-gradient-to-t dark:after:from-indigo-500/90 dark:after:via-red-400/50 dark:after:to-sky-400/0 dark:after:z-50"
+            >
+              <video
+                src="images/toggle-btn.mov"
+                autoplay
+                loop
+                class="works__content-image h-full w-full transition-all duration-300"
+              ></video>
+              <div
+                class="icon__wrapper absolute left-0 right-0 top-0 -bottom-40 m-auto w-full h-full bg-gradient-to-b from-blue-700/0 to-blue-700/100 flex items-center justify-center opacity-0 invisible rounded-2xl transition-all duration-300 cursor-pointer group-hover:opacity-100 group-hover:visible group-hover:transition-all group-hover:duration-300 group-hover:bottom-0 dark:bg-gradient-to-b dark:from-sky-400/0 dark:via-indigo-500/50 dark:to-red-400/100"
+              >
                 <a href="#">
-                  <i class="fas fa-search work__link"></i>
+                  <i class="fas fa-search work__link text-4xl text-white"></i>
                 </a>
               </div>
             </div>
-            <div class="works__content image8">
+            <div
+              class="works__content bg-white group h-full md:h-60 w-full rounded-2xl shadow-lg transition-all duration-300 relative overflow-y-auto image4 col-start-2 col-end-5 row-start-2 row-end-3 dark:after:absolute dark:after:hover:hidden dark:before:hover:hidden dark:after:content-[''] dark:after:w-full dark:after:h-full dark:after:bottom-0 dark:after:right-0 dark:after:bg-gradient-to-t dark:after:from-indigo-500/90 dark:after:via-red-400/50 dark:after:to-sky-400/0 dark:after:z-50"
+            >
               <img
-                src="images/analysis-strategy-study-information-business-planning.jpg"
+                src="images/castro.png"
                 alt=""
-                class="works__content-image"
+                class="works__content-image h-[155rem] xl:h-[120rem] lg:h-[100rem] md:h-[80rem] es:h-[50rem] w-full transition-all duration-300 object-contain"
               />
-              <div class="icon__wrapper">
-                <a href="#">
-                  <i class="fas fa-search work__link"></i>
+              <div
+                class="icon__wrapper absolute left-0 right-0 top-0 -bottom-40 m-auto w-full h-full bg-gradient-to-b from-blue-700/0 to-blue-700/100 flex items-center justify-center opacity-0 invisible rounded-2xl transition-all duration-300 cursor-pointer group-hover:opacity-100 group-hover:visible group-hover:transition-all group-hover:duration-300 group-hover:bottom-0 dark:bg-gradient-to-b dark:from-sky-400/0 dark:via-indigo-500/50 dark:to-red-400/100"
+              >
+                <a
+                  class="flex flex-col justify-center items-center"
+                  href="https://mostafajmsh.github.io/Castro-lighting/"
+                >
+                  <i class="fas fa-search work__link text-4xl text-white"></i>
+                  <p class="font-bold text-2xl text-white">SCROLL FOR MORE</p>
+                  <p class="font-bold text-2xl text-white">CLICK FOR LIVE</p>
                 </a>
               </div>
             </div>
-            <div class="works__content image11">
+            <div
+              class="works__content bg-white group h-full w-full rounded-2xl shadow-lg transition-all duration-300 relative overflow-hidden image5 col-start-2 col-end-5 row-start-3 row-end-4 dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:h-full dark:after:bottom-0 dark:after:right-0 dark:after:bg-gradient-to-t dark:after:from-indigo-500/90 dark:after:via-red-400/50 dark:after:to-sky-400/0 dark:after:z-50"
+            >
               <img
-                src="images/programming-background-with-person-working-with-codes-computer.jpg"
+                src="images/space-1.png"
                 alt=""
-                class="works__content-image"
+                class="works__content-image h-full w-full transition-all duration-300 object-contain"
               />
-              <div class="icon__wrapper">
-                <a href="#">
-                  <i class="fas fa-search work__link"></i>
+              <div
+                class="icon__wrapper absolute left-0 right-0 top-0 -bottom-40 m-auto w-full h-full bg-gradient-to-b from-blue-700/0 to-blue-700/100 flex items-center justify-center opacity-0 invisible rounded-2xl transition-all duration-300 cursor-pointer group-hover:opacity-100 group-hover:visible group-hover:transition-all group-hover:duration-300 group-hover:bottom-0 dark:bg-gradient-to-b dark:from-sky-400/0 dark:via-indigo-500/50 dark:to-red-400/100"
+              >
+                <a
+                  href="https://github.com/mostafajmsh/space-tourism-website.git"
+                >
+                  <i class="fas fa-search work__link text-4xl text-white"></i>
                 </a>
               </div>
             </div>
@@ -379,16 +1068,33 @@
       <!-- Finish Works Template -->
 
       <!-- Start Article Template -->
-      <section class="blog section" id="blog">
-        <div id="blog-container" class="container">
-          <p class="blog-title titles">بلاگ</p>
-          <div class="blog-content">
+      <section
+        class="blog section overflow-hidden transition-all duration-500 mt-16"
+        id="blog"
+      >
+        <div
+          id="blog-container"
+          class="container flex flex-col items-center justify-center"
+        >
+          <p
+            class="articles-title rtl:font-titleFont ltr:font-enTitleFont text-blue-700 text-5xl es:text-3xl mt-4"
+          >
+            <span
+              class="text-white bg-blue-700 pr-4 rounded-tr-[7rem] rounded-br-[14rem] rounded-l-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
+              >مقا</span
+            >
+            <span
+              class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+              >له ها</span
+            >
+          </p>
+          <div class="blog-content w-full">
             <div class="article__slider">
               <div
-                class="swiper swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl"
+                class="swiper swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl shadow-lg dark:shadow-md dark:bg-[#1d1d20] rounded-xl mt-16"
               >
                 <div
-                  class="swiper-wrapper"
+                  class="swiper-wrapper ltr:flex ltr:flex-row-reverse w-full"
                   id="articles-wrapper"
                   aria-live="polite"
                   style="
@@ -402,25 +1108,40 @@
                     aria-label="NaN / 13"
                     style="width: 435px"
                   >
-                    <div class="article-card">
-                      <div class="article-card__header">
+                    <div
+                      class="article-card dark:bg-[#292931] my-12 transition-all duration-300 rounded-2xl shadow-lg h-full hover:-translate-y-1"
+                    >
+                      <div
+                        class="article-card__header relative dark:before:rounded-t-2xl dark:after:rounded-t-2xl dark:before:content-[''] dark:before:absolute dark:before:h-full dark:before:bg-gradient-to-b dark:bg-gradient-to-b dark:before:from-sky-400/20 dark:before:via-indigo-500/80 dark:before:to-red-400/90 dark:before:w-full dark:before:z-50 dark:before:left-0 dark:before:opacity-100 dark:before:transition-all dark:before:duration-300 dark:after:content-[''] dark:after:absolute dark:after:h-full dark:after:w-full dark:after:bg-gradient-to-b dark:after:from-indigo-500/0 dark:after:to-indigo-500/80 dark:after:z-50 dark:after:left-0 dark:after:bottom-0 dark:after:opacity-100 dark:after:transition-all dark:after:duration-300"
+                      >
                         <a href="#" class="article-card__link-img">
                           <img
                             src="./images/blog/4592515.jpg"
-                            class="article-card__img"
+                            class="article-card__img rounded-t-2xl w-full h-72 object-cover max-h-64 shadow-md"
                             alt="Article Cover"
                           />
                         </a>
                       </div>
-                      <div class="article-card__content">
-                        <a href="#" class="article-card__link">
+                      <div
+                        class="article-card__content pt-4 px-8 pb-8 flex flex-col"
+                      >
+                        <a
+                          href="#"
+                          class="article-card__link dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text transition-all hover:transition-all hover:text-red-500 text-blue-700 font-bold inline text-start truncate"
+                        >
                           ایده های خلاقانه برای ایجاد نمونه کار
                         </a>
-                        <p class="article-card__text text">
+                        <p
+                          class="article-card__text dark:text-slate-300 text pt-4 pb-6 mt-0 text-right"
+                        >
                           یکی از معضلات افرادی که تازه برنامه نویسی را شروع می
                           کنند پیدا کردن ایده...
                         </p>
-                        <a href="#" class="article-card__btn">بیشتر بخوانید</a>
+                        <a
+                          href="#"
+                          class="article-card__btn dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 text-white shadow-md bg-blue-700 text-lg py-2 px-4 rounded-lg transition-all duration-300 w-fit hover:bg-white hover:text-blue-700 hover:transition-all"
+                          >بیشتر بخوانید</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -431,25 +1152,40 @@
                     aria-label="NaN / 13"
                     style="width: 435px"
                   >
-                    <div class="article-card">
-                      <div class="article-card__header">
+                    <div
+                      class="article-card dark:bg-[#292931] my-12 transition-all duration-300 rounded-2xl shadow-lg h-full hover:-translate-y-1"
+                    >
+                      <div
+                        class="article-card__header relative dark:before:rounded-t-2xl dark:after:rounded-t-2xl dark:before:content-[''] dark:before:absolute dark:before:h-full dark:before:bg-gradient-to-b dark:before:from-sky-400/20 dark:before:via-indigo-500/80 dark:before:to-red-400/90 dark:before:w-full dark:before:z-50 dark:before:left-0 dark:before:opacity-100 dark:before:transition-all dark:before:duration-300 dark:after:content-[''] dark:after:absolute dark:after:h-full dark:after:w-full dark:after:bg-gradient-to-b dark:after:from-indigo-500/0 dark:after:to-indigo-500/80 dark:after:z-50 dark:after:left-0 dark:after:bottom-0 dark:after:opacity-100 dark:after:transition-all dark:after:duration-300"
+                      >
                         <a href="#" class="article-card__link-img">
                           <img
                             src="./images/blog/4949146.jpg"
-                            class="article-card__img"
+                            class="article-card__img rounded-t-2xl w-full h-72 object-cover max-h-64 shadow-md"
                             alt="Article Cover"
                           />
                         </a>
                       </div>
-                      <div class="article-card__content">
-                        <a href="#" class="article-card__link">
+                      <div
+                        class="article-card__content pt-4 px-8 pb-8 flex flex-col"
+                      >
+                        <a
+                          href="#"
+                          class="article-card__link dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text transition-all hover:transition-all hover:text-red-500 text-blue-700 font-bold inline text-start truncate"
+                        >
                           اهمیت داشتن روحیه کار تیمی
                         </a>
-                        <p class="article-card__text text">
+                        <p
+                          class="article-card__text dark:text-slate-300 text pt-4 pb-6 mt-0 text-right"
+                        >
                           بسیاری از اشخاصی که وارد دنیای برنامه‌نویسی می شوند با
                           ذهنیت کار فری...
                         </p>
-                        <a href="#" class="article-card__btn">بیشتر بخوانید</a>
+                        <a
+                          href="#"
+                          class="article-card__btn dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 text-white shadow-md bg-blue-700 text-lg py-2 px-4 rounded-lg transition-all duration-300 w-fit hover:bg-white hover:text-blue-700 hover:transition-all"
+                          >بیشتر بخوانید</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -460,25 +1196,40 @@
                     aria-label="NaN / 13"
                     style="width: 435px"
                   >
-                    <div class="article-card">
-                      <div class="article-card__header">
+                    <div
+                      class="article-card dark:bg-[#292931] my-12 transition-all duration-300 rounded-2xl shadow-lg h-full hover:-translate-y-1"
+                    >
+                      <div
+                        class="article-card__header relative dark:before:rounded-t-2xl dark:after:rounded-t-2xl dark:before:content-[''] dark:before:absolute dark:before:h-full dark:before:bg-gradient-to-b dark:before:from-sky-400/20 dark:before:via-indigo-500/80 dark:before:to-red-400/90 dark:before:w-full dark:before:z-50 dark:before:left-0 dark:before:opacity-100 dark:before:transition-all dark:before:duration-300 dark:after:content-[''] dark:after:absolute dark:after:h-full dark:after:w-full dark:after:bg-gradient-to-b dark:after:from-indigo-500/0 dark:after:to-indigo-500/80 dark:after:z-50 dark:after:left-0 dark:after:bottom-0 dark:after:opacity-100 dark:after:transition-all dark:after:duration-300"
+                      >
                         <a href="#" class="article-card__link-img">
                           <img
                             src="./images/blog/9910414.jpg"
-                            class="article-card__img"
+                            class="article-card__img rounded-t-2xl w-full h-72 object-cover max-h-64 shadow-md"
                             alt="Article Cover"
                           />
                         </a>
                       </div>
-                      <div class="article-card__content">
-                        <a href="#" class="article-card__link">
+                      <div
+                        class="article-card__content pt-4 px-8 pb-8 flex flex-col"
+                      >
+                        <a
+                          href="#"
+                          class="article-card__link dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text transition-all hover:transition-all hover:text-red-500 text-blue-700 font-bold inline text-start truncate"
+                        >
                           دولوپر کیست ؟ بررسی بازار کار و درآمد
                         </a>
-                        <p class="article-card__text text">
+                        <p
+                          class="article-card__text dark:text-slate-300 text pt-4 pb-6 mt-0 text-right"
+                        >
                           در این مقاله قصد داریم در مورد توسعه دهنده وب یا وب
                           مستر وهمچنین بازار...
                         </p>
-                        <a href="#" class="article-card__btn">بیشتر بخوانید</a>
+                        <a
+                          href="#"
+                          class="article-card__btn dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 text-white shadow-md bg-blue-700 text-lg py-2 px-4 rounded-lg transition-all duration-300 w-fit hover:bg-white hover:text-blue-700 hover:transition-all"
+                          >بیشتر بخوانید</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -489,25 +1240,40 @@
                     aria-label="NaN / 13"
                     style="width: 435px"
                   >
-                    <div class="article-card">
-                      <div class="article-card__header">
+                    <div
+                      class="article-card dark:bg-[#292931] my-12 transition-all duration-300 rounded-2xl shadow-lg h-full hover:-translate-y-1"
+                    >
+                      <div
+                        class="article-card__header relative dark:before:rounded-t-2xl dark:after:rounded-t-2xl dark:before:content-[''] dark:before:absolute dark:before:h-full dark:before:bg-gradient-to-b dark:before:from-sky-400/20 dark:before:via-indigo-500/80 dark:before:to-red-400/90 dark:before:w-full dark:before:z-50 dark:before:left-0 dark:before:opacity-100 dark:before:transition-all dark:before:duration-300 dark:after:content-[''] dark:after:absolute dark:after:h-full dark:after:w-full dark:after:bg-gradient-to-b dark:after:from-indigo-500/0 dark:after:to-indigo-500/80 dark:after:z-50 dark:after:left-0 dark:after:bottom-0 dark:after:opacity-100 dark:after:transition-all dark:after:duration-300"
+                      >
                         <a href="#" class="article-card__link-img">
                           <img
                             src="./images/blog/9960729.jpg"
-                            class="article-card__img"
+                            class="article-card__img rounded-t-2xl w-full h-72 object-cover max-h-64 shadow-md"
                             alt="Article Cover"
                           />
                         </a>
                       </div>
-                      <div class="article-card__content">
-                        <a href="#" class="article-card__link">
+                      <div
+                        class="article-card__content pt-4 px-8 pb-8 flex flex-col"
+                      >
+                        <a
+                          href="#"
+                          class="article-card__link dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text transition-all hover:transition-all hover:text-red-500 text-blue-700 font-bold inline text-start truncate"
+                        >
                           بهترین دوره های آموزش طراحی سایت
                         </a>
-                        <p class="article-card__text text">
+                        <p
+                          class="article-card__text dark:text-slate-300 text pt-4 pb-6 mt-0 text-right"
+                        >
                           در این مقاله قصد داریم جامع ترین دوره های پروژه محور
                           برنامه‌نویسی ...
                         </p>
-                        <a href="#" class="article-card__btn">بیشتر بخوانید</a>
+                        <a
+                          href="#"
+                          class="article-card__btn dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 text-white shadow-md bg-blue-700 text-lg py-2 px-4 rounded-lg transition-all duration-300 w-fit hover:bg-white hover:text-blue-700 hover:transition-all"
+                          >بیشتر بخوانید</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -518,25 +1284,40 @@
                     aria-label="NaN / 13"
                     style="width: 435px"
                   >
-                    <div class="article-card">
-                      <div class="article-card__header">
+                    <div
+                      class="article-card dark:bg-[#292931] my-12 transition-all duration-300 rounded-2xl shadow-lg h-full hover:-translate-y-1"
+                    >
+                      <div
+                        class="article-card__header relative dark:before:rounded-t-2xl dark:after:rounded-t-2xl dark:before:content-[''] dark:before:absolute dark:before:h-full dark:before:bg-gradient-to-b dark:before:from-sky-400/20 dark:before:via-indigo-500/80 dark:before:to-red-400/90 dark:before:w-full dark:before:z-50 dark:before:left-0 dark:before:opacity-100 dark:before:transition-all dark:before:duration-300 dark:after:content-[''] dark:after:absolute dark:after:h-full dark:after:w-full dark:after:bg-gradient-to-b dark:after:from-indigo-500/0 dark:after:to-indigo-500/80 dark:after:z-50 dark:after:left-0 dark:after:bottom-0 dark:after:opacity-100 dark:after:transition-all dark:after:duration-300"
+                      >
                         <a href="#" class="article-card__link-img">
                           <img
                             src="./images/blog/Sandy_Tech-28_Single-06.jpg"
-                            class="article-card__img"
+                            class="article-card__img rounded-t-2xl w-full h-72 object-cover max-h-64 shadow-md"
                             alt="Article Cover"
                           />
                         </a>
                       </div>
-                      <div class="article-card__content">
-                        <a href="#" class="article-card__link">
+                      <div
+                        class="article-card__content pt-4 px-8 pb-8 flex flex-col"
+                      >
+                        <a
+                          href="#"
+                          class="article-card__link dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text transition-all hover:transition-all hover:text-red-500 text-blue-700 font-bold inline text-start truncate"
+                        >
                           مدت زمان یادگیری فرانت‌اند
                         </a>
-                        <p class="article-card__text text">
+                        <p
+                          class="article-card__text dark:text-slate-300 text pt-4 pb-6 mt-0 text-right"
+                        >
                           بحث مدت زمان یادگیری در هر شاخه از برنامه‌نویسی یکی از
                           پر تکرارترین...
                         </p>
-                        <a href="#" class="article-card__btn">بیشتر بخوانید</a>
+                        <a
+                          href="#"
+                          class="article-card__btn dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 text-white shadow-md bg-blue-700 text-lg py-2 px-4 rounded-lg transition-all duration-300 w-fit hover:bg-white hover:text-blue-700 hover:transition-all"
+                          >بیشتر بخوانید</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -547,25 +1328,40 @@
                     aria-label="NaN / 13"
                     style="width: 435px"
                   >
-                    <div class="article-card">
-                      <div class="article-card__header">
+                    <div
+                      class="article-card dark:bg-[#292931] my-12 transition-all duration-300 rounded-2xl shadow-lg h-full hover:-translate-y-1"
+                    >
+                      <div
+                        class="article-card__header relative dark:before:rounded-t-2xl dark:after:rounded-t-2xl dark:before:content-[''] dark:before:absolute dark:before:h-full dark:before:bg-gradient-to-b dark:before:from-sky-400/20 dark:before:via-indigo-500/80 dark:before:to-red-400/90 dark:before:w-full dark:before:z-50 dark:before:left-0 dark:before:opacity-100 dark:before:transition-all dark:before:duration-300 dark:after:content-[''] dark:after:absolute dark:after:h-full dark:after:w-full dark:after:bg-gradient-to-b dark:after:from-indigo-500/0 dark:after:to-indigo-500/80 dark:after:z-50 dark:after:left-0 dark:after:bottom-0 dark:after:opacity-100 dark:after:transition-all dark:after:duration-300"
+                      >
                         <a href="#" class="article-card__link-img">
                           <img
                             src="./images/blog/Sandy_Trv-02_Single-09.jpg"
-                            class="article-card__img"
+                            class="article-card__img rounded-t-2xl w-full h-72 object-cover max-h-64 shadow-md"
                             alt="Article Cover"
                           />
                         </a>
                       </div>
-                      <div class="article-card__content">
-                        <a href="#" class="article-card__link">
+                      <div
+                        class="article-card__content pt-4 px-8 pb-8 flex flex-col"
+                      >
+                        <a
+                          href="#"
+                          class="article-card__link dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text transition-all hover:transition-all hover:text-red-500 text-blue-700 font-bold inline text-start truncate"
+                        >
                           برنامه‌نویسی مناسب چه کسانی است؟
                         </a>
-                        <p class="article-card__text text">
+                        <p
+                          class="article-card__text dark:text-slate-300 text pt-4 pb-6 mt-0 text-right"
+                        >
                           تو این مقاله قراره ببینیم برنامه نویسی برای چه کسانی
                           مناسب است. اصلا چرا...
                         </p>
-                        <a href="#" class="article-card__btn">بیشتر بخوانید</a>
+                        <a
+                          href="#"
+                          class="article-card__btn dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 text-white shadow-md bg-blue-700 text-lg py-2 px-4 rounded-lg transition-all duration-300 w-fit hover:bg-white hover:text-blue-700 hover:transition-all"
+                          >بیشتر بخوانید</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -576,25 +1372,40 @@
                     aria-label="NaN / 13"
                     style="width: 435px"
                   >
-                    <div class="article-card">
-                      <div class="article-card__header">
+                    <div
+                      class="article-card dark:bg-[#292931] my-12 transition-all duration-300 rounded-2xl shadow-lg h-full hover:-translate-y-1"
+                    >
+                      <div
+                        class="article-card__header relative dark:before:rounded-t-2xl dark:after:rounded-t-2xl dark:before:content-[''] dark:before:absolute dark:before:h-full dark:before:bg-gradient-to-b dark:before:from-sky-400/20 dark:before:via-indigo-500/80 dark:before:to-red-400/90 dark:before:w-full dark:before:z-50 dark:before:left-0 dark:before:opacity-100 dark:before:transition-all dark:before:duration-300 dark:after:content-[''] dark:after:absolute dark:after:h-full dark:after:w-full dark:after:bg-gradient-to-b dark:after:from-indigo-500/0 dark:after:to-indigo-500/80 dark:after:z-50 dark:after:left-0 dark:after:bottom-0 dark:after:opacity-100 dark:after:transition-all dark:after:duration-300"
+                      >
                         <a href="#" class="article-card__link-img">
                           <img
                             src="./images/blog/Wavy_Bus-20_Single-04.jpg"
-                            class="article-card__img"
+                            class="article-card__img rounded-t-2xl w-full h-72 object-cover max-h-64 shadow-md"
                             alt="Article Cover"
                           />
                         </a>
                       </div>
-                      <div class="article-card__content">
-                        <a href="#" class="article-card__link">
+                      <div
+                        class="article-card__content pt-4 px-8 pb-8 flex flex-col"
+                      >
+                        <a
+                          href="#"
+                          class="article-card__link dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text transition-all hover:transition-all hover:text-red-500 text-blue-700 font-bold inline text-start truncate"
+                        >
                           طراح وب به چه کسی گفته میشه؟
                         </a>
-                        <p class="article-card__text text">
+                        <p
+                          class="article-card__text dark:text-slate-300 text pt-4 pb-6 mt-0 text-right"
+                        >
                           تو این مقاله قصد داریم به تعریف طراح وب و تفاوتش با
                           برنامه‌نویس وب توضیح...
                         </p>
-                        <a href="#" class="article-card__btn">بیشتر بخوانید</a>
+                        <a
+                          href="#"
+                          class="article-card__btn dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 text-white shadow-md bg-blue-700 text-lg py-2 px-4 rounded-lg transition-all duration-300 w-fit hover:bg-white hover:text-blue-700 hover:transition-all"
+                          >بیشتر بخوانید</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -605,31 +1416,46 @@
                     aria-label="NaN / 13"
                     style="width: 435px"
                   >
-                    <div class="article-card">
-                      <div class="article-card__header">
+                    <div
+                      class="article-card dark:bg-[#292931] my-12 transition-all duration-300 rounded-2xl shadow-lg h-full hover:-translate-y-1"
+                    >
+                      <div
+                        class="article-card__header relative dark:before:rounded-t-2xl dark:after:rounded-t-2xl dark:before:content-[''] dark:before:absolute dark:before:h-full dark:before:bg-gradient-to-b dark:before:from-sky-400/20 dark:before:via-indigo-500/80 dark:before:to-red-400/90 dark:before:w-full dark:before:z-50 dark:before:left-0 dark:before:opacity-100 dark:before:transition-all dark:before:duration-300 dark:after:content-[''] dark:after:absolute dark:after:h-full dark:after:w-full dark:after:bg-gradient-to-b dark:after:from-indigo-500/0 dark:after:to-indigo-500/80 dark:after:z-50 dark:after:left-0 dark:after:bottom-0 dark:after:opacity-100 dark:after:transition-all dark:after:duration-300"
+                      >
                         <a href="#" class="article-card__link-img">
                           <img
                             src="./images/blog/Wavy_Edu-02_Single-05.jpg"
-                            class="article-card__img"
+                            class="article-card__img rounded-t-2xl w-full h-72 object-cover max-h-64 shadow-md"
                             alt="Article Cover"
                           />
                         </a>
                       </div>
-                      <div class="article-card__content">
-                        <a href="#" class="article-card__link">
+                      <div
+                        class="article-card__content pt-4 px-8 pb-8 flex flex-col"
+                      >
+                        <a
+                          href="#"
+                          class="article-card__link dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text transition-all hover:transition-all hover:text-red-500 text-blue-700 font-bold inline text-start truncate"
+                        >
                           محبوب ترین زبان های برنامه‌نویسی ۲۰۲۳
                         </a>
-                        <p class="article-card__text text">
+                        <p
+                          class="article-card__text dark:text-slate-300 text pt-4 pb-6 mt-0 text-right"
+                        >
                           در این مقاله میخوایم بپردازیم به محبوب ترین زبان های
                           برنامه‌نویسی سال ۲۰۲۳ بر...
                         </p>
-                        <a href="#" class="article-card__btn">بیشتر بخوانید</a>
+                        <a
+                          href="#"
+                          class="article-card__btn dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 text-white shadow-md bg-blue-700 text-lg py-2 px-4 rounded-lg transition-all duration-300 w-fit hover:bg-white hover:text-blue-700 hover:transition-all"
+                          >بیشتر بخوانید</a
+                        >
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev dark:text-white"></div>
+                <div class="swiper-button-next dark:text-white"></div>
                 <span
                   class="swiper-notification"
                   aria-live="assertive"
@@ -642,192 +1468,328 @@
       </section>
       <!-- Finish Article Template -->
 
-      <!-- Start Contact Template -->
-      <section class="contact section" id="contact">
-        <div id="contact-container" class="container">
-          <p class="contact-title titles">ثبت نظرات</p>
-          <div class="contact-content">
-            <form action="" class="contact__form">
-              <input type="text" placeholder="نام" class="contact__input" />
-              <input type="mail" placeholder="ایمیل" class="contact__input" />
+      <!-- Start Comment Template -->
+      <section
+        class="contact md:mb-60 section transition-all duration-500 mt-16"
+        id="comment"
+      >
+        <div
+          id="contact-container"
+          class="container flex flex-col items-center justify-center"
+        >
+          <p
+            class="comments-title rtl:font-titleFont ltr:font-enTitleFont text-blue-700 text-5xl md:text-3xl es:text-2xl"
+          >
+            <span
+              class="text-white bg-blue-700 pr-4 rounded-tr-[7rem] rounded-br-[14rem] rounded-l-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
+              >ثبت</span
+            >
+            <span
+              class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+              >نظرات</span
+            >
+          </p>
+          <div class="comments-content w-full pt-8">
+            <form
+              action=""
+              class="comments__form flex flex-col justify-center w-full items-center"
+            >
+              <div
+                class="comments-input__wrapper flex justify-between gap-8 items-center w-full sm:flex-col sm:gap-0"
+              >
+                <input
+                  type="text"
+                  placeholder="نام"
+                  class="contact__input dark:bg-[#292931] dark:text-slate-300 p-4 mb-8 w-full rounded-lg border-none outline-none bg-none text-slate-700 bg-blue-700/10 shadow-lg transition-all focus:bg-slate-100 focus:transition-all"
+                />
+                <input
+                  type="mail"
+                  placeholder="ایمیل"
+                  class="contact__input dark:bg-[#292931] dark:text-slate-300 p-4 mb-8 w-full rounded-lg border-none outline-none bg-none text-slate-700 bg-blue-700/10 shadow-lg transition-all focus:bg-slate-100 focus:transition-all"
+                />
+              </div>
               <textarea
                 name=""
                 id=""
                 cols="0"
                 rows="10"
                 placeholder="متن خود را وارد کنید..."
-                class="contact__input"
+                class="contact__input dark:bg-[#292931] dark:text-slate-300 p-4 mb-8 w-full rounded-lg border-none outline-none bg-none text-slate-700 bg-blue-700/10 shadow-lg transition-all focus:bg-slate-100 focus:transition-all"
               ></textarea>
-              <input type="button" value="ارسال" class="contact__button" />
+              <input
+                type="button"
+                value="ارسال"
+                class="contact__button dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 block border-none outline-none text-lg cursor-pointer ml-auto text-white bg-blue-700 rounded-lg font-bold py-2 px-10 shadow-lg transition-all hover:text-blue-700 hover:bg-white hover:transition-all"
+              />
             </form>
           </div>
         </div>
       </section>
-      <!-- Finish Contact Template -->
+      <!-- Finish Comment Template -->
     </main>
     <!-- Finish Main Template -->
 
     <!-- Start Footer Template -->
-    <footer id="footer">
-      <div class="background">
-        <svg
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          width="100%"
-          height="100%"
-          viewBox="0 0 3840 2160"
+    <footer class="block">
+      <section
+        id="footer"
+        class="relative left-0 md:bottom-16 flex mt-16 flex-col h-96 md:h-64 es:h-48 sm:bg-gradient-to-t sm:from-blue-700/90 sm:to-white dark:from-blue-700/100 dark:via-red-400/0 text-white overflow-hidden z-0"
+      >
+        <div
+          class="background absolute bottom-72 xl:bottom-64 lg:bottom-60 md:bottom-56 sm:bottom-50 es:bottom-52 z-10 w-full h-full left-0 right-0"
         >
-          <defs>
-            <linearGradient id="bg" x2="0%" y2="100%">
-              <stop
-                offset="0%"
-                style="stop-color: rgba(53, 127, 242, 0.6)"
-              ></stop>
-              <stop
-                offset="100%"
-                style="stop-color: rgba(38, 89, 190, 0.06)"
-              ></stop>
-            </linearGradient>
-            <path
-              id="wave"
-              fill="url(#bg)"
-              d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
-      s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
-            />
-          </defs>
-          <g>
-            <use xlink:href="#wave" opacity=".3">
-              <animateTransform
-                attributeName="transform"
-                attributeType="XML"
-                type="scale"
-                dur="8s"
-                calcMode="spline"
-                values="10 1.8; 12 2; 10 1.8"
-                keyTimes="0; .5; 1"
-                keySplines="0.42, 0, 0.58, 1.0; 0.42, 0, 0.58, 1.0"
-                repeatCount="indefinite"
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 3840 2160"
+            class="w-full h-[220%] lg:h-[250%] md:h-[300%]"
+          >
+            <defs>
+              <linearGradient id="bg" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: #1d4ed8"></stop>
+                <stop offset="100%" style="stop-color: #1d4fd834"></stop>
+              </linearGradient>
+              <path
+                id="wave"
+                fill="url(#bg)"
+                d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+        s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
               />
-            </use>
-            <use xlink:href="#wave" opacity=".6">
-              <animateTransform
-                attributeName="transform"
-                attributeType="XML"
-                type="scale"
-                dur="6s"
-                calcMode="spline"
-                values="9 1.8; 11 2.1; 9 1.8"
-                keyTimes="0; .5; 1"
-                keySplines="0.42, 0, 0.58, 1.0; 0.42, 0, 0.58, 1.0"
-                repeatCount="indefinite"
-              />
-            </use>
-            <use xlink:href="#wave" opacity=".9">
-              <animateTransform
-                attributeName="transform"
-                attributeType="XML"
-                type="scale"
-                dur="4s"
-                calcMode="spline"
-                values="10 1.8; 12 2; 10 1.8"
-                keyTimes="0; .5; 1"
-                keySplines="0.42, 0, 0.58, 1.0; 0.42, 0, 0.58, 1.0"
-                repeatCount="indefinite"
-              />
-            </use>
+            </defs>
+            <g>
+              <use xlink:href="#wave" opacity=".3">
+                <animateTransform
+                  attributeName="transform"
+                  attributeType="XML"
+                  type="scale"
+                  dur="8s"
+                  calcMode="spline"
+                  values="10 1.8; 12 2; 10 1.8"
+                  keyTimes="0; .5; 1"
+                  keySplines="0.42, 0, 0.58, 1.0; 0.42, 0, 0.58, 1.0"
+                  repeatCount="indefinite"
+                />
+              </use>
+              <use xlink:href="#wave" opacity=".6">
+                <animateTransform
+                  attributeName="transform"
+                  attributeType="XML"
+                  type="scale"
+                  dur="6s"
+                  calcMode="spline"
+                  values="9 1.8; 11 2.1; 9 1.8"
+                  keyTimes="0; .5; 1"
+                  keySplines="0.42, 0, 0.58, 1.0; 0.42, 0, 0.58, 1.0"
+                  repeatCount="indefinite"
+                />
+              </use>
+              <use xlink:href="#wave" opacity=".9">
+                <animateTransform
+                  attributeName="transform"
+                  attributeType="XML"
+                  type="scale"
+                  dur="4s"
+                  calcMode="spline"
+                  values="10 1.8; 12 2; 10 1.8"
+                  keyTimes="0; .5; 1"
+                  keySplines="0.42, 0, 0.58, 1.0; 0.42, 0, 0.58, 1.0"
+                  repeatCount="indefinite"
+                />
+              </use>
 
-            <!-- <use xlink:href="#wave" opacity=".3">
-              <animateTransform
-                attributeName="transform"
-                attributeType="XML"
-                type="translate"
-                dur="8s"
-                calcMode="spline"
-                values="270 230; -334 180; 270 230"
-                keyTimes="0; .5; 1"
-                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-                repeatCount="indefinite"
-              />
-            </use>
-            <use xlink:href="#wave" opacity=".6">
-              <animateTransform
-                attributeName="transform"
-                attributeType="XML"
-                type="translate"
-                dur="6s"
-                calcMode="spline"
-                values="-270 230;243 220;-270 230"
-                keyTimes="0; .6; 1"
-                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-                repeatCount="indefinite"
-              />
-            </use>
-            <use xlink:href="#wave" opacty=".9">
-              <animateTransform
-                attributeName="transform"
-                attributeType="XML"
-                type="translate"
-                dur="4s"
-                calcMode="spline"
-                values="0 230;-140 200;0 230"
-                keyTimes="0; .4; 1"
-                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-                repeatCount="indefinite"
-              />
-            </use> -->
-          </g>
-        </svg>
-      </div>
-
-      <section>
-        <ul class="socials">
-          <li>
-            <a><i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li>
-            <a><i class="fa-brands fa-twitter"></i></a>
-          </li>
-          <li>
-            <a><i class="fa-brands fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a><i class="fa-brands fa-instagram"></i></a>
-          </li>
-        </ul>
-        <ul class="links">
-          <li><a>صفحه اصلی</a></li>
-          <li><a>درباره من</a></li>
-          <li><a>خدمات</a></li>
-          <li><a>نمونه کارها</a></li>
-          <li><a>مهارت ها</a></li>
-        </ul>
-        <p class="info">
-          تلفن تماس: 09019919182 / شبکه های اجتماعی: @mostafa_jmsh
-        </p>
-        <p class="legal">
-          Copyright ©2023 J-Technologies. All rights reserved.
-        </p>
+              <!-- <use xlink:href="#wave" opacity=".3">
+                <animateTransform
+                  attributeName="transform"
+                  attributeType="XML"
+                  type="translate"
+                  dur="8s"
+                  calcMode="spline"
+                  values="270 230; -334 180; 270 230"
+                  keyTimes="0; .5; 1"
+                  keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                  repeatCount="indefinite"
+                />
+              </use>
+              <use xlink:href="#wave" opacity=".6">
+                <animateTransform
+                  attributeName="transform"
+                  attributeType="XML"
+                  type="translate"
+                  dur="6s"
+                  calcMode="spline"
+                  values="-270 230;243 220;-270 230"
+                  keyTimes="0; .6; 1"
+                  keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                  repeatCount="indefinite"
+                />
+              </use>
+              <use xlink:href="#wave" opacty=".9">
+                <animateTransform
+                  attributeName="transform"
+                  attributeType="XML"
+                  type="translate"
+                  dur="4s"
+                  calcMode="spline"
+                  values="0 230;-140 200;0 230"
+                  keyTimes="0; .4; 1"
+                  keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                  repeatCount="indefinite"
+                />
+              </use> -->
+            </g>
+          </svg>
+        </div>
+        <div
+          class="absolute flex flex-col bottom-0 w-full h-full justify-end items-center"
+        >
+          <ul
+            class="socials z-50 flex text-white justify-center items-center p-0 m-0 mb-8 lg:mb-4 gap-8 md:mb-0 text-3xl"
+          >
+            <li>
+              <a
+                class="text-3xl lg:text-2xl md:text-xl hover:text-red-400 transition-all hover:transition-all"
+                href="https://github.com/mostafajmsh"
+                ><svg
+                  class="w-6 h-6 text-gray-800 dark:fill-[url(#gradient)]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <defs>
+                    <linearGradient
+                      id="gradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
+                      <stop offset="0%" style="stop-color: #38bdf8" />
+                      <stop offset="50%" style="stop-color: #6366f1" />
+                      <stop offset="100%" style="stop-color: #f87171" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                    clip-rule="evenodd"
+                  /></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                class="text-3xl lg:text-2xl md:text-xl hover:text-red-400 transition-all hover:transition-all"
+                href="https://t.me/mostafa_jmsh"
+                ><svg
+                  width="24px"
+                  height="24px"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xml:space="preserve"
+                  xmlns:serif="http://www.serif.com/"
+                  style="fill: white"
+                  class="fill-white dark:fill-[url(#gradient)]"
+                >
+                  <path
+                    id="telegram-1"
+                    d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"
+                  /></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                class="text-3xl lg:text-2xl md:text-xl hover:text-red-400 transition-all hover:transition-all"
+                href="https://www.linkedin.com/in/mostafa-jmsh"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: white"
+                  class="fill-white dark:fill-[url(#gradient)]"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  /></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                class="text-3xl lg:text-2xl md:text-xl hover:text-red-400 transition-all hover:transition-all"
+                href="https://www.instagram.com/mostafa_jamshidi94"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: white"
+                  class="fill-white dark:fill-[url(#gradient)]"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  /></svg
+              ></a>
+            </li>
+          </ul>
+          <ul
+            class="footer-links z-50 flex justify-center items-center flex-wrap p-0 m-0 pb-4 text-2xl lg:text-xl md:hidden lg:pb-2 gap-8 lg:gap-4"
+          >
+            <li>
+              <a
+                class="hover:text-white transition-all hover:transition-all"
+                href="#home"
+                >صفحه اصلی</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white transition-all hover:transition-all"
+                href="#services"
+                >خدمات</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white transition-all hover:transition-all"
+                href="#works"
+                >نمونه کارها</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white transition-all hover:transition-all"
+                href="#skills"
+                >مهارت ها</a
+              >
+            </li>
+          </ul>
+          <p
+            class="footer-info flex flex-wrap justify-center items-center z-50 text-xl mt-8 text-center m-0 lg:mt-2 md:text-sm"
+          >
+            <span>تلفن تماس: 09019919182 / </span
+            ><span>ایمیل: mostafajamshidi7394@gmail.com</span>
+          </p>
+          <p
+            class="legal z-50 m-0 mt-8 lg:mt-2 text-center text-sm sm:text-xs mb-4 es:mb-2"
+          >
+            Copyright ©2023 J-Technologies. All rights reserved.
+          </p>
+        </div>
       </section>
     </footer>
     <!-- Finish Footer Template -->
     <script type="text/javascript" src="./js/util/effects.js"></script>
     <script type="text/javascript" src="./js/util/navbar.js"></script>
+    <script src="./vendor/SwiperSlider/swiper.js"></script>
     <script src="./vendor/FontAwesome5/all.min.js"></script>
     <script src="./vendor/bootStrap/bootstrap.bundle.min.js"></script>
     <script src="./vendor/bootStrap/jquery.min.js"></script>
-    <script src="./vendor/SwiperSlider/swiper.js"></script>
     <script src="./js/util/slider.js"></script>
     <script src="./js/util/change-theme.js"></script>
-
-    <script>
-      const navMenu = document.getElementById("nav-menu");
-      const toggleMenu = () => {
-        document.body.classList.toggle("open");
-        navMenu.classList.toggle("show");
-      };
-    </script>
+    <script src="./js/util/lang-changer.js"></script>
   </body>
 </html>

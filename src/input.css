@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    a {
+        @apply no-underline !important;
+    }
+
+    @font-face {
+        font-family: danaLight;
+        src: url(../fonts/DanaFaNum-Light.ttf);
+    }
+
+    @font-face {
+        font-family: danaReg;
+        src: url(../fonts/DanaFaNum-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: danaMed;
+        src: url(../fonts/DanaFaNum-Medium.ttf);
+    }
+
+    @font-face {
+        font-family: danaBold;
+        src: url(../fonts/DanaFaNum-DemiBold.ttf);
+    }
+
+    @font-face {
+        font-family: poppinsBold;
+        src: url(../fonts/Poppins-SemiBold.ttf);
+    }
+
+    @font-face {
+        font-family: poppinsExtraLite;
+        src: url(../fonts/Poppins-ExtraLight.ttf);
+    }
+}
+
+.active {
+    @apply dark:border-b-white md:border-none border-b-2 border-solid border-b-blue-700 bg-blue-700 dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 text-white dark:text-white dark:rounded-xl !important;
+}
+
+.hide-section {
+    @apply opacity-0 translate-x-0 translate-y-[-50px] scale-75 !important;
+}
+
+.show-section {
+    @apply opacity-100 translate-x-0 translate-y-0 scale-100 !important;
+}
+
+.show__header {
+    @apply top-0 !important;
+}
+
+.element-transformer-y {
+    @apply translate-y-0 opacity-100 !important;
+}
+
+.centered {
+    @apply right-1 !important;
+}
+
+.menu-close__position {
+    @apply rotate-180 !important;
+}

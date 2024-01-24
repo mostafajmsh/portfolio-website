@@ -2,14 +2,18 @@ const swiper = new Swiper('.swiper-container', {
     speed: 800,
     loop: false,
     breakpoints: {
-        200: {
-            slidesPerView: 1
+        0: {
+            slidesPerView: 1,
+            centeredItems: true
         },
-        500: {
-            slidesPerView: 2
+        590: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            centeredItems: false
         },
-        1200: {
-            slidesPerView: 3
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30
         }
     },
     navigation: {
