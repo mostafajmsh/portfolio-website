@@ -2780,6 +2780,10 @@ a {
 }
 
 @media (max-width: 1023px) {
+  .ltr\:lg\:hidden:where([dir="ltr"], [dir="ltr"] *) {
+    display: none !important;
+  }
+
   .ltr\:lg\:flex-col-reverse:where([dir="ltr"], [dir="ltr"] *) {
     flex-direction: column-reverse !important;
   }
@@ -2800,6 +2804,10 @@ a {
 
   .ltr\:md\:mr-1:where([dir="ltr"], [dir="ltr"] *) {
     margin-right: 0.25rem !important;
+  }
+
+  .ltr\:md\:flex:where([dir="ltr"], [dir="ltr"] *) {
+    display: flex !important;
   }
 
   .ltr\:md\:pl-1:where([dir="ltr"], [dir="ltr"] *) {
