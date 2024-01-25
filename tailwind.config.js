@@ -39,8 +39,8 @@ module.exports = {
         'mdCustomRows': "repeat(5, 300px)",
       },
       backgroundImage: {
-        'darkBanner': "linear-gradient(to bottom, #292931e8, #292931a9), url(../images/banner/banner-bckgrnd.jpg)",
-        'lightBanner': "linear-gradient(to bottom, #f1f5f9ec, #eff6ffd3), url(../images/banner/banner-bckgrnd.jpg)",
+        'darkBanner': "linear-gradient(to bottom, #292931e8, #292931a9), url(../images/banner/banner-bckgrnd.webp)",
+        'lightBanner': "linear-gradient(to bottom, #f1f5f9ec, #eff6ffd3), url(../images/banner/banner-bckgrnd.webp)",
         'darkSkills': "url(../images/programming-background-with-person-working-with-codes-computer.jpg)",
         'lightSkills': "linear-gradient(to bottom, #f8fafcdd, #1d4fd8d5), url(../images/programming-background-with-person-working-with-codes-computer.jpg)"
       }
