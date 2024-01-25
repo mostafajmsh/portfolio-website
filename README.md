@@ -14,7 +14,7 @@
 
 <br />
 
-<img src="./home-dark.png" />
+<img src="./home-dark.webp" />
 
 <br />
 
@@ -23,36 +23,36 @@
 ### ⚡️ &nbsp; Contains animations when scrolling.
 ### ⚡️ &nbsp; Light and dark theme with save last theme for next reloading
 
-<img src="./home-light.png" />
+<img src="./home-light.webp" />
 
 ### ⚡️ &nbsp; Language Changer with save last language for next reloading
 
-<img src="./home-fa.png" />
+<img src="./home-fa.webp" />
 
 <br />
 
-<img src="./skills-en.png" />
+<img src="./skills-en.webp" />
 
 <br />
 
-<img src="./skills.png" />
+<img src="./skills.webp" />
 
 ### ⚡️ &nbsp; Smooth scrolling in each section.
 ### ⚡️ &nbsp; Developed first with the Mobile First methodology, then for desktop.
 
-<img width="390px" src="./home-mobile.png" />
+<img width="390px" src="./home-mobile.webp" />
 
 ### ⚡️ &nbsp; Create many effects and features for every section
 ### ⚡️ &nbsp; Slider for articles
 
-<img src="./articles.png" />
+<img src="./articles.webp" />
 
 ### ⚡️ &nbsp; Animation on footer section
 ### ⚡️ &nbsp; Three menu mode for desktop, scrolling & mobile
 ### ⚡️ &nbsp; Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
-<img src="./services.png" />
-<img width="390px" src="./services-mobile.png" />
+<img src="./services.webp" />
+<img width="390px" src="./skills-mobile.webp" />
 
 💙 Follow me to see more projects like this.
 

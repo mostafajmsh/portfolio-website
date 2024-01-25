@@ -1,7 +1,5 @@
 /* The given code is a CSS code that defines the styles for a progress bar component used in a skills
 section of a website. */
-@import "./fonts.css";
-@import "./variables.css";
 @import "./reset.css";
 
 .progress {

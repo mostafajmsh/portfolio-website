@@ -927,6 +927,10 @@ a {
   max-width: 740px !important;
 }
 
+.flex-grow {
+  flex-grow: 1 !important;
+}
+
 .-translate-y-20 {
   --tw-translate-y: -5rem !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
@@ -2546,6 +2550,11 @@ a {
     line-height: 2.25rem !important;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem !important;
+    line-height: 2.5rem !important;
+  }
+
   .md\:text-base {
     font-size: 1rem !important;
     line-height: 1.5rem !important;
@@ -2559,11 +2568,6 @@ a {
   .md\:text-xl {
     font-size: 1.25rem !important;
     line-height: 1.75rem !important;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem !important;
-    line-height: 2.5rem !important;
   }
 
   .md\:text-black {
@@ -2664,11 +2668,6 @@ a {
     padding-top: 0px !important;
   }
 
-  .sm\:text-xs {
-    font-size: 0.75rem !important;
-    line-height: 1rem !important;
-  }
-
   .sm\:text-lg {
     font-size: 1.125rem !important;
     line-height: 1.75rem !important;
@@ -2677,6 +2676,11 @@ a {
   .sm\:text-sm {
     font-size: 0.875rem !important;
     line-height: 1.25rem !important;
+  }
+
+  .sm\:text-xs {
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
   }
 }
 
@@ -2768,11 +2772,6 @@ a {
     font-size: 0.75rem !important;
     line-height: 1rem !important;
   }
-
-  .es\:text-lg {
-    font-size: 1.125rem !important;
-    line-height: 1.75rem !important;
-  }
 }
 
 .ltr\:left-0:where([dir="ltr"], [dir="ltr"] *) {
@@ -2828,16 +2827,6 @@ a {
 }
 
 @media (max-width: 639px) {
-  .ltr\:sm\:text-4xl:where([dir="ltr"], [dir="ltr"] *) {
-    font-size: 2.25rem !important;
-    line-height: 2.5rem !important;
-  }
-
-  .ltr\:sm\:text-3xl:where([dir="ltr"], [dir="ltr"] *) {
-    font-size: 1.875rem !important;
-    line-height: 2.25rem !important;
-  }
-
   .ltr\:sm\:text-2xl:where([dir="ltr"], [dir="ltr"] *) {
     font-size: 1.5rem !important;
     line-height: 2rem !important;
@@ -2851,16 +2840,6 @@ a {
 
   .ltr\:es\:p-0:where([dir="ltr"], [dir="ltr"] *) {
     padding: 0px !important;
-  }
-
-  .ltr\:es\:text-2xl:where([dir="ltr"], [dir="ltr"] *) {
-    font-size: 1.5rem !important;
-    line-height: 2rem !important;
-  }
-
-  .ltr\:es\:text-xl:where([dir="ltr"], [dir="ltr"] *) {
-    font-size: 1.25rem !important;
-    line-height: 1.75rem !important;
   }
 
   .ltr\:es\:text-lg:where([dir="ltr"], [dir="ltr"] *) {
@@ -2888,16 +2867,6 @@ a {
 }
 
 @media (max-width: 400px) {
-  .rtl\:es\:text-3xl:where([dir="rtl"], [dir="rtl"] *) {
-    font-size: 1.875rem !important;
-    line-height: 2.25rem !important;
-  }
-
-  .rtl\:es\:text-xl:where([dir="rtl"], [dir="rtl"] *) {
-    font-size: 1.25rem !important;
-    line-height: 1.75rem !important;
-  }
-
   .rtl\:es\:text-2xl:where([dir="rtl"], [dir="rtl"] *) {
     font-size: 1.5rem !important;
     line-height: 2rem !important;
