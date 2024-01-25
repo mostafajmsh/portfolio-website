@@ -13,7 +13,7 @@ const langChangerText = document.querySelectorAll('.lang__changer-text');
 const changeToLtr = () => {
   htmlElem.dir = 'ltr';
   htmlElem.lang = 'en-US';
-  langChangerText.forEach(text => text.innerHTML = `en-US` );
+  langChangerText.forEach(text => text.innerHTML = `en-US`);
   navListElem.innerHTML = `
 <li class="nav__item w-full md:px-0 items-center h-full text-white flex">
   <a href="#home" class="nav__link my-auto first-item gap-1 es:text-xs md:gap-0 text-nowrap hover:text-white w-full md:text-lg md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-xs font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200">
@@ -76,14 +76,14 @@ FRONTEND WEB DEVELOPER
   rightBtnElement.innerHTML = `
 <a
   href="https://github.com/mostafajmsh"
-  class="py-3 font-bold es:py-2 px-10 es:px-5 flex-row-reverse text-nowrap opacity-100 es:text-sm text-xl no-underline transition-all hover:transition-all hover:bg-white hover:text-blue-700 rounded-lg bg-slate-700 text-white flex items-center justify-center gap-2"
+  class="py-3 font-bold es:py-2 px-10 es:px-5 flex-row-reverse flex-grow text-nowrap opacity-100 sm:text-sm text-xl no-underline transition-all hover:transition-all hover:bg-white hover:text-blue-700 rounded-lg bg-slate-700 text-white flex items-center justify-center gap-2"
   id="button-resume"
   >GITHUB <i class="fab fa-github text-inherit"></i>
 </a>
 <a
   href="#works"
   id="button-works"
-  class="py-3 font-bold es:py-2 px-10 es:px-5 flex-row-reverse text-nowrap opacity-100 es:text-sm gap-2 text-xl no-underline transition-all hover:transition-all hover:bg-white hover:text-blue-700 rounded-lg bg-blue-700 dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 text-slate-50 flex justify-center items-center"
+  class="py-3 font-bold es:py-2 px-10 es:px-5 flex-row-reverse flex-grow text-nowrap opacity-100 sm:text-sm gap-2 text-xl no-underline transition-all hover:transition-all hover:bg-white hover:text-blue-700 rounded-lg bg-blue-700 dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 text-slate-50 flex justify-center items-center"
   >PORTFOLIO <i class="fas fa-briefcase text-inherit"></i>
 </a>
 `;

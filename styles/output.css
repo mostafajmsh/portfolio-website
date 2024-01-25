@@ -1155,7 +1155,7 @@ a {
 }
 
 .bg-lightBanner {
-  background-image: linear-gradient(to bottom, #f1f5f9ec, #eff6ffd3), url(../images/banner/banner-bckgrnd.jpg) !important;
+  background-image: linear-gradient(to bottom, #f1f5f9ec, #eff6ffd3), url(../images/banner/banner-bckgrnd.webp) !important;
 }
 
 .bg-lightSkills {
@@ -1834,7 +1834,7 @@ a {
 }
 
 :is(.dark .dark\:bg-darkBanner) {
-  background-image: linear-gradient(to bottom, #292931e8, #292931a9), url(../images/banner/banner-bckgrnd.jpg) !important;
+  background-image: linear-gradient(to bottom, #292931e8, #292931a9), url(../images/banner/banner-bckgrnd.webp) !important;
 }
 
 :is(.dark .dark\:bg-darkSkills) {
@@ -2561,6 +2561,11 @@ a {
     line-height: 1.75rem !important;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem !important;
+    line-height: 2.5rem !important;
+  }
+
   .md\:text-black {
     --tw-text-opacity: 1 !important;
     color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
@@ -2663,6 +2668,16 @@ a {
     font-size: 0.75rem !important;
     line-height: 1rem !important;
   }
+
+  .sm\:text-lg {
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+  }
 }
 
 @media (max-width: 400px) {
@@ -2753,6 +2768,11 @@ a {
     font-size: 0.75rem !important;
     line-height: 1rem !important;
   }
+
+  .es\:text-lg {
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+  }
 }
 
 .ltr\:left-0:where([dir="ltr"], [dir="ltr"] *) {
@@ -2780,10 +2800,6 @@ a {
 }
 
 @media (max-width: 1023px) {
-  .ltr\:lg\:hidden:where([dir="ltr"], [dir="ltr"] *) {
-    display: none !important;
-  }
-
   .ltr\:lg\:flex-col-reverse:where([dir="ltr"], [dir="ltr"] *) {
     flex-direction: column-reverse !important;
   }
@@ -2806,10 +2822,6 @@ a {
     margin-right: 0.25rem !important;
   }
 
-  .ltr\:md\:flex:where([dir="ltr"], [dir="ltr"] *) {
-    display: flex !important;
-  }
-
   .ltr\:md\:pl-1:where([dir="ltr"], [dir="ltr"] *) {
     padding-left: 0.25rem !important;
   }
@@ -2819,6 +2831,16 @@ a {
   .ltr\:sm\:text-4xl:where([dir="ltr"], [dir="ltr"] *) {
     font-size: 2.25rem !important;
     line-height: 2.5rem !important;
+  }
+
+  .ltr\:sm\:text-3xl:where([dir="ltr"], [dir="ltr"] *) {
+    font-size: 1.875rem !important;
+    line-height: 2.25rem !important;
+  }
+
+  .ltr\:sm\:text-2xl:where([dir="ltr"], [dir="ltr"] *) {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
   }
 }
 
@@ -2834,6 +2856,16 @@ a {
   .ltr\:es\:text-2xl:where([dir="ltr"], [dir="ltr"] *) {
     font-size: 1.5rem !important;
     line-height: 2rem !important;
+  }
+
+  .ltr\:es\:text-xl:where([dir="ltr"], [dir="ltr"] *) {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+  }
+
+  .ltr\:es\:text-lg:where([dir="ltr"], [dir="ltr"] *) {
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
   }
 }
 
@@ -2859,5 +2891,15 @@ a {
   .rtl\:es\:text-3xl:where([dir="rtl"], [dir="rtl"] *) {
     font-size: 1.875rem !important;
     line-height: 2.25rem !important;
+  }
+
+  .rtl\:es\:text-xl:where([dir="rtl"], [dir="rtl"] *) {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+  }
+
+  .rtl\:es\:text-2xl:where([dir="rtl"], [dir="rtl"] *) {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
   }
 }
