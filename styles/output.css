@@ -876,11 +876,6 @@ a {
   height: 100% !important;
 }
 
-.h-max {
-  height: -moz-max-content !important;
-  height: max-content !important;
-}
-
 .max-h-64 {
   max-height: 16rem !important;
 }
@@ -917,6 +912,10 @@ a {
 
 .min-w-60 {
   min-width: 15rem !important;
+}
+
+.max-w-20 {
+  max-width: 5rem !important;
 }
 
 .max-w-72 {
