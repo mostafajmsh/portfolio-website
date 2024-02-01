@@ -3,7 +3,7 @@ const bannerSection = document.getElementById("home"),
     skillsSection = document.querySelector('#skills'),
     workSection = document.querySelector('#works'),
     servicesSection = document.querySelector('#services'),
-    blogSection = document.querySelector('#blog'),
+    // blogSection = document.querySelector('#blog'),
     contactSection = document.querySelector('#comment'),
     bannerTitleElem = document.querySelector('.banner-title'),
     bannerTextElem = document.querySelector('.banner-text'),
@@ -54,8 +54,8 @@ const onScroll = (event) => {
     toggleSectionVisibility(skillsSection, bannerSection.offsetHeight);
     toggleSectionVisibility(servicesSection, bannerSection.offsetHeight + skillsSection.offsetHeight - 300);
     toggleSectionVisibility(workSection, bannerSection.offsetHeight + skillsSection.offsetHeight + servicesSection.offsetHeight - 500);
-    toggleSectionVisibility(blogSection, bannerSection.offsetHeight + skillsSection.offsetHeight + servicesSection.offsetHeight + workSection.offsetHeight - 300);
-    toggleSectionVisibility(contactSection, bannerSection.offsetHeight + skillsSection.offsetHeight + servicesSection.offsetHeight + workSection.offsetHeight + blogSection.offsetHeight - 300);
+    // toggleSectionVisibility(blogSection, bannerSection.offsetHeight + skillsSection.offsetHeight + servicesSection.offsetHeight + workSection.offsetHeight - 300);
+    toggleSectionVisibility(contactSection, bannerSection.offsetHeight + skillsSection.offsetHeight + servicesSection.offsetHeight + workSection.offsetHeight - 300);
 
     const skillsContentText = document.querySelector('.skills__content-text')
     const skillProgressBars = document.querySelectorAll('.progress')
