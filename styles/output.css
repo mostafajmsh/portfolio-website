@@ -808,6 +808,10 @@ a {
   margin-top: 30rem !important;
 }
 
+.mb-60 {
+  margin-bottom: 15rem !important;
+}
+
 .block {
   display: block !important;
 }
@@ -924,6 +928,10 @@ a {
 
 .max-w-\[740px\] {
   max-width: 740px !important;
+}
+
+.max-w-24 {
+  max-width: 6rem !important;
 }
 
 .flex-grow {
@@ -1235,6 +1243,11 @@ a {
 .px-10 {
   padding-left: 2.5rem !important;
   padding-right: 2.5rem !important;
+}
+
+.px-2 {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
 }
 
 .px-4 {

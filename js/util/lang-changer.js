@@ -16,59 +16,47 @@ const changeToLtr = () => {
   langChangerText.forEach(text => text.innerHTML = `en-US`);
   navListElem.innerHTML = `
 <li class="nav__item w-full md:px-0 items-center h-full text-white flex">
-  <a href="#home" class="nav__link my-auto first-item gap-1 es:text-xs md:gap-0 text-nowrap hover:text-white w-full md:text-lg md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-xs font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200">
+  <a href="#home" class="nav__link my-auto px-2 first-item gap-1 es:text-xs md:gap-0 text-nowrap hover:text-blue-700 w-full md:text-lg md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-xs font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200">
     <i class="fas fa-home ltr:lg:hidden ltr:md:flex"></i>
     <p class="md:hidden">HOME</p>
   </a>
 </li>
 <li class="nav__item w-full md:px-0 flex items-center h-full">
-  <a href="#skills" class="nav__link gap-1 md:gap-0 text-nowrap es:text-xs hover:text-white w-full md:text-lg md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-xs font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200" style="animation-delay: 0.3s">
+  <a href="#skills" class="nav__link gap-1 px-2 md:gap-0 text-nowrap es:text-xs hover:text-blue-700 w-full md:text-lg md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-xs font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200" style="animation-delay: 0.3s">
     <i class="fas fa-laptop-code ltr:lg:hidden ltr:md:flex"></i>
     <p class="md:hidden">SKILLS</p>
   </a>
 </li>
 <li class="nav__item w-full md:px-0 flex items-center h-full">
-  <a href="#services" class="nav__link gap-1 md:gap-0 text-nowrap es:text-xs hover:text-white w-full md:text-lg md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-xs font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200" style="animation-delay: 0.4s">
+  <a href="#services" class="nav__link gap-1 px-2 md:gap-0 text-nowrap es:text-xs hover:text-blue-700 w-full md:text-lg md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-xs font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200" style="animation-delay: 0.4s">
     <i class="fas fa-gem ltr:lg:hidden ltr:md:flex"></i>
     <p class="md:hidden">SERVICES</p>
   </a>
 </li>
 
 <li class="nav__item w-full md:px-0 flex items-center h-full">
-  <a href="#works" class="nav__link gap-1 md:gap-0 text-nowrap es:text-xs hover:text-white w-full md:text-lg md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-xs font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200" style="animation-delay: 0.5s">
+  <a href="#works" class="nav__link gap-1 px-2 md:gap-0 text-nowrap es:text-xs hover:text-blue-700 w-full md:text-lg md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-xs font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200" style="animation-delay: 0.5s">
     <i class="fas fa-briefcase ltr:lg:hidden ltr:md:flex"></i>
     <p class="md:hidden">PORTFOLIO</p>
   </a>
 </li>
 
 <li class="nav__item w-full md:px-0 flex items-center h-full">
-  <a href="#blog" class="nav__link gap-1 md:gap-0 text-nowrap es:text-xs hover:text-white w-full md:text-lg md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-xs font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200" style="animation-delay: 0.6s">
-    <i class="fas fa-rss ltr:lg:hidden ltr:md:flex"></i>
-    <p class="md:hidden">ARTICLES</p>
-  </a>
-</li>
-
-<li class="nav__item w-full md:px-0 flex items-center h-full">
-  <a href="#comment" class="nav__link comment-link gap-1 md:gap-0 text-nowrap es:text-xs hover:text-white w-full md:text-lg md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-xs font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200" style="animation-delay: 0.6s">
+  <a href="#comment" class="nav__link comment-link gap-1 px-2 md:gap-0 text-nowrap es:text-xs hover:text-blue-700 w-full md:text-lg md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-xs font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200" style="animation-delay: 0.6s">
     <i class="fas fa-comment ltr:lg:hidden ltr:md:flex"></i>
     <p class="md:hidden">COMMENTS</p>
   </a>
 </li>
 
 <li class="nav__item w-full md:px-0 flex items-center h-full">
-  <a href="#footer" class="nav__link footer-link gap-1 md:gap-0 text-nowrap es:text-xs hover:text-white w-full md:text-lg md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-xs font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200" style="animation-delay: 0.6s">
+  <a href="#footer" class="nav__link footer-link gap-1 px-2 md:gap-0 text-nowrap es:text-xs hover:text-blue-700 w-full md:text-lg md:transition-all md:duration-300 md:h-[60%] md:rounded-xl md:items-center md:w-full md:text-center md:justify-center flex items-center h-full text-lg lg:text-xs font-bold relative text-darkColor md:text-slate-400 md:hover:text-white dark:text-slate-300 transition-all after:content-{'*'} after:absolute after:bottom-1 after:right-0 after:w-full after:h-0.5 after:rounded-sm after:bg-blue-700 h-full dark:after:bg-white after:scale-x-0 after:origin-right-{-50%} after:transition-all after:duration-200 hover:after:scale-x-100 hover:after:transition-all hover:after:duration-200" style="animation-delay: 0.6s">
     <i class="fas fa-envelope ltr:lg:hidden ltr:md:flex"></i>
     <p class="md:hidden">CONTACT</p>
   </a>
 </li>
 `;
   bannerTitleElem.innerHTML = `
-<span
-class="text-white bg-blue-700 dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 rounded-tl-[7rem] pl-4 pr-2 rounded-r-[4rem] rounded-bl-[14rem]"
->MOSTAFA</span>
-<span
-class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
->JAMSHIDI</span>
+MOSTAFA JAMSHIDI
 `;
   bannerTextElem.innerHTML = `
 FRONTEND WEB DEVELOPER
@@ -91,15 +79,9 @@ FRONTEND WEB DEVELOPER
 <div class="about-content flex justify-start w-full">
 <div class="about__content-right">
   <p
-    class="text-4xl es:text-2xl w-full text-left text-blue-700 ltr:font-enTitleFont"
+    class="text-4xl es:text-2xl w-full text-left text-blue-700 dark:text-white ltr:font-enTitleFont"
   >
-    <span
-      class="text-white bg-blue-700 dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 pl-4 pr-1 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem]"
-      >ABOUT</span
-    >
-    <span
-      class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
-      > ME</span>
+ABOUT ME
   </p>
   <p
     class="about__content-title min-title dark:text-slate-300 text-left font-bold text-2xl es:text-xl mt-8"
@@ -123,29 +105,15 @@ id="skills-container"
 class="container flex flex-col justify-center items-center"
 >
 <p
-  class="skills-title rtl:font-titleFont ltr:font-enTitleFont text-blue-700 text-5xl es:text-3xl"
+  class="skills-title rtl:font-titleFont ltr:font-enTitleFont text-blue-700 dark:text-white text-5xl es:text-3xl"
 >
-  <span
-    class="text-white bg-blue-700 pl-4 pr-1 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
-    >SK</span
-  >
-  <span
-    class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
-    >ILLS</span
-  >
+SKILLS
 </p>
 
 <p
-  class="skills__content-title min-title text-blue-700 rtl:font-titleFont ltr:font-enTitleFont text-3xl es:text-xl text-left w-full mt-8"
+  class="skills__content-title min-title text-blue-700 dark:text-white rtl:font-titleFont ltr:font-enTitleFont text-3xl es:text-xl text-left w-full mt-8"
 >
-  <span
-    class="bg-blue-700 pl-2 pr-1 text-white rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
-    >PROFESSIONAL</span
-  >
-  <span
-    class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
-    >SKILLS</span
-  >
+  PROFESSIONAL SKILLS
 </p>
 <p
   class="skills__content-text text-left -translate-y-20 opacity-0 transition-all duration-1000 mt-8 text-xl dark:text-slate-300 es:text-base"
@@ -180,9 +148,8 @@ class="skills-content flex bg-lightSkills dark:bg-darkSkills justify-center w-fu
         class="progress-text__wrapper -translate-y-20 opacity-0 transition-all duration-1000 text-darkColor text-left"
       >
         <ol class="flex flex-col text-left sm:justify-center sm:mt-4">
-        <li class="progress-title relative text-start text-blue-700 pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-blue-700 dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0">
-          <span class="text-white bg-blue-700 dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 pl-2 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem]">JAVA</span>
-          <span class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text">SCRIPT</span>
+        <li class="progress-title relative text-start text-blue-700 dark:text-white pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-blue-700 dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0">
+          JAVASCRIPT
         </li>
         <li class="progress-text md:text-base es:text-sm mt-2 list-disc text-darkColor dark:text-slate-300 ltr:font-enPrimaryFont font-bold text-xl max-w-[740px] transition-all duration-500">
           Proficiency in JavaScript and interactive web development skills.
@@ -217,16 +184,9 @@ class="skills-content flex bg-lightSkills dark:bg-darkSkills justify-center w-fu
       >
         <ol class="flex flex-col sm:justify-center sm:mt-4">
           <li
-            class="progress-title relative text-start text-blue-700 pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-blue-700 dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0"
+            class="progress-title relative text-start text-blue-700 dark:text-white pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-blue-700 dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0"
           >
-            <span
-              class="text-white bg-blue-700 pl-2 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
-              >HTM</span
-            >
-            <span
-              class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
-              >L5</span
-            >
+            HTML5
           </li>
           <li class="progress-text md:text-base es:text-sm mt-2 list-disc text-left text-darkColor dark:text-slate-300 ltr:font-enPrimaryFont font-bold text-xl max-w-[740px] transition-all duration-500">
           Implementation of HTML code in a structured and readable manner.
@@ -259,16 +219,9 @@ class="skills-content flex bg-lightSkills dark:bg-darkSkills justify-center w-fu
       >
         <ol class="flex flex-col sm:justify-center sm:mt-4">
           <li
-            class="progress-title relative text-start text-blue-700 pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-blue-700 dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0"
+            class="progress-title relative text-start text-blue-700 dark:text-white pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-blue-700 dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0"
           >
-            <span
-              class="text-white bg-blue-700 pl-2 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
-              >CS</span
-            >
-            <span
-              class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
-              >S3</span
-            >
+            CSS3
           </li>
           <li class="progress-text md:text-base es:text-sm mt-2 list-disc text-left text-darkColor dark:text-slate-300 ltr:font-enPrimaryFont font-bold text-xl max-w-[740px] transition-all duration-500">
           Designing and implementing beautiful and responsive styles using CSS.
@@ -300,16 +253,9 @@ class="skills-content flex bg-lightSkills dark:bg-darkSkills justify-center w-fu
       >
         <ol class="flex flex-col sm:justify-center sm:mt-4">
           <li
-            class="progress-title relative text-start text-blue-700 pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-blue-700 dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0"
+            class="progress-title relative text-start text-blue-700 dark:text-white pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-blue-700 dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0"
           >
-            <span
-              class="text-white bg-blue-700 pl-2 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
-              >UI/</span
-            >
-            <span
-              class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
-              >UX</span
-            >
+            UI/UX
           </li>
           <li class="progress-text md:text-base es:text-sm mt-2 list-disc text-left text-darkColor dark:text-slate-300 ltr:font-enPrimaryFont font-bold text-xl max-w-[740px] transition-all duration-500">
           Effective User Experience (UX) design considering user needs and preferences. Creating visually appealing and user-friendly User Interface (UI).
@@ -321,8 +267,7 @@ class="skills-content flex bg-lightSkills dark:bg-darkSkills justify-center w-fu
   <div class="more-skills w-full mt-8 pb-16">
     <ol class="progress-text__wrapper -translate-y-20 opacity-0 transition-all duration-1000 flex flex-col w-full sm:justify-center sm:mt-8">
       <li class="progress-title relative text-start text-white pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-white dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0">
-        <span class="text-blue-700 bg-white pl-2 pr-1 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:bg-gradient-to-r dark:text-white from-sky-400 via-indigo-500 to-red-400">Frameworks</span>
-        <span class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"> and Technologies</span>
+        Frameworks and Technologies
       </li>
       <li class="progress-text md:text-base es:text-sm mr-8 mt-4 es:mt-2 list-disc text-left text-slate-200 dark:text-slate-300 ltr:font-enPrimaryFont font-bold text-xl transition-all duration-500">
         Proficiency in using modern frameworks such as Tailwind CSS and Bootstrap for facilitating design and styling.
@@ -333,8 +278,7 @@ class="skills-content flex bg-lightSkills dark:bg-darkSkills justify-center w-fu
     </ol>
   <ol class="progress-text__wrapper -translate-y-20 opacity-0 transition-all duration-1000 flex flex-col w-full mt-8 sm:justify-center sm:mt-8">
     <li class="progress-title relative text-start text-white pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-white dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0">
-      <span class="text-blue-700 bg-white pl-2 pr-1 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:text-white dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400">Communication</span>
-      <span class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"> Skills</span>
+      Communication Skills
     </li>
     <li class="progress-text md:text-base es:text-sm mr-8 mt-4 es:mt-2 list-disc text-left text-slate-200 dark:text-slate-300 ltr:font-enPrimaryFont font-bold text-xl transition-all duration-500">
       Effective and active communication with development teams and various departments.
@@ -345,8 +289,7 @@ class="skills-content flex bg-lightSkills dark:bg-darkSkills justify-center w-fu
   </ol>
   <ol class="progress-text__wrapper -translate-y-20 opacity-0 transition-all duration-1000 flex flex-col w-full sm:justify-center mt-8">
   <li class="progress-title relative text-start text-white pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-white dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0">
-    <span class="text-blue-700 bg-white pl-2 pr-1 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:text-white dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400">Tools</span>
-    <span class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"> and Technologies</span>
+    Tools and Technologies
   </li>
   <li class="progress-text md:text-base es:text-sm mr-8 mt-4 es:mt-2 list-disc text-left text-slate-200 dark:text-slate-300 ltr:font-enPrimaryFont font-bold text-xl transition-all duration-500">
     Proficient use of npm for package and dependency management.
@@ -366,8 +309,7 @@ class="skills-content flex bg-lightSkills dark:bg-darkSkills justify-center w-fu
 </ol>
 <ol class="progress-text__wrapper -translate-y-20 opacity-0 transition-all duration-1000 flex flex-col w-full mt-8 sm:justify-center sm:mt-8">
   <li class="progress-title relative text-start text-white pb-2 rtl:font-titleFont ltr:font-enTitleFont text-2xl font-bold border-b-2 border-solid border-white dark:border-none dark:after:absolute dark:after:content-[''] dark:after:w-full dark:after:bottom-0 dark:after:h-[2px] dark:after:bg-gradient-to-r dark:after:from-sky-400 dark:after:via-indigo-500 dark:after:to-red-400 dark:after:left-0">
-    <span class="text-blue-700 bg-white pl-2 pr-1 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:text-white dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400">Extras</span>
-    <span class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"> Milestones</span>
+    Extras Milestones
   </li>
   <li class="progress-text md:text-base es:text-sm mr-8 mt-4 es:mt-2 list-disc text-left text-slate-200 dark:text-slate-300 ltr:font-enPrimaryFont font-bold text-xl transition-all duration-500">
     Ability to execute unit tests and ensure the correct functionality of the code.
@@ -386,16 +328,9 @@ id="services-container"
 class="container flex flex-col items-center"
 >
 <p
-  class="skills-title ltr:font-enTitleFont text-blue-700 text-5xl es:text-3xl"
+  class="skills-title ltr:font-enTitleFont text-blue-700 dark:text-white text-5xl es:text-3xl"
 >
-  <span
-    class="text-white bg-blue-700 pl-4 pr1 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
-    >MY</span
-  >
-  <span
-    class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
-    >SERVICES</span
-  >
+  MY SERVICES
 </p>
 
 <p class="text-left mt-8 text-xl dark:text-slate-300 es:text-base">
@@ -493,32 +428,18 @@ class="container flex flex-col items-center"
 </div>
 `;
   portfolioTitleElem.innerHTML = `
-    <span
-    class="text-white bg-blue-700 pl-4 pr-1 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
-    >PORT</span
-    >
-    <span
-    class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
-    >FOLIO</span
-    >
+    PORTFOLIO
 `;
-  articlesTitleElem.innerHTML = `
-    <span
-    class="text-white bg-blue-700 pl-4 pr-1 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
-    >ART</span>
-    <span
-    class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
-    >ICLES</span>
-`;
+  //   articlesTitleElem.innerHTML = `
+  //     <span
+  //     class="text-white bg-blue-700 pl-4 pr-1 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
+  //     >ART</span>
+  //     <span
+  //     class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
+  //     >ICLES</span>
+  // `;
   commentsTitleElem.innerHTML = `
-    <span
-    class="text-white bg-blue-700 pl-4 pr-1 rounded-tl-[7rem] rounded-bl-[14rem] rounded-r-[4rem] dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400"
-    >SUBMIT</span
-    >
-    <span
-    class="dark:bg-gradient-to-r from-sky-400 via-indigo-500 to-red-400 dark:text-transparent dark:bg-clip-text"
-    >COMMENTS</span
-    >
+    SUBMIT COMMENTS
 `;
   commentsForm.innerHTML = `
     <div
